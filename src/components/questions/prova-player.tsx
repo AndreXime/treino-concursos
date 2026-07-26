@@ -21,12 +21,14 @@ interface ProvaPlayerProps {
 	prova: Prova;
 	questions: Question[];
 	initialNumero?: number;
+	focusMode?: boolean;
 }
 
 export function ProvaPlayer({
 	prova,
 	questions,
 	initialNumero,
+	focusMode = false,
 }: ProvaPlayerProps) {
 	const {
 		activeQuestion,
@@ -40,7 +42,6 @@ export function ProvaPlayer({
 	const chromeRef = useRef<HTMLDivElement>(null);
 	const mobileMapRef = useRef<HTMLDetailsElement>(null);
 	const [justFinished, setJustFinished] = useState(false);
-	const [focusMode, setFocusMode] = useState(false);
 
 	const activeQuestionId = activeQuestion?.id;
 	useEffect(() => {
@@ -49,30 +50,6 @@ export function ProvaPlayer({
 		}
 		chromeRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
 	}, [activeQuestionId, focusMode]);
-
-	useEffect(() => {
-		if (focusMode) {
-			document.documentElement.dataset.focusMode = "prova";
-		} else {
-			delete document.documentElement.dataset.focusMode;
-		}
-		return () => {
-			delete document.documentElement.dataset.focusMode;
-		};
-	}, [focusMode]);
-
-	useEffect(() => {
-		if (!focusMode) {
-			return;
-		}
-		function onKeyDown(event: KeyboardEvent) {
-			if (event.key === "Escape") {
-				setFocusMode(false);
-			}
-		}
-		window.addEventListener("keydown", onKeyDown);
-		return () => window.removeEventListener("keydown", onKeyDown);
-	}, [focusMode]);
 
 	if (questions.length === 0) {
 		return null;
@@ -192,20 +169,6 @@ export function ProvaPlayer({
 
 	return (
 		<div className="space-y-6">
-			<div
-				className={`flex justify-end ${focusMode ? "sticky top-0 z-20 bg-background/95 py-2 backdrop-blur" : ""}`}
-			>
-				<button
-					type="button"
-					onClick={() => setFocusMode((current) => !current)}
-					aria-pressed={focusMode}
-					title={focusMode ? "Sair do foco (Esc)" : "Esconder chrome e mapa"}
-					className="rounded-lg border border-border bg-surface px-3 py-2 text-sm font-semibold text-foreground hover:border-accent/40 hover:text-accent-strong"
-				>
-					{focusMode ? "Sair do foco" : "Modo foco"}
-				</button>
-			</div>
-
 			{!focusMode ? (
 				<div
 					ref={chromeRef}
