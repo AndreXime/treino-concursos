@@ -72,6 +72,7 @@ export function clearAttempts(): void {
 	}
 
 	window.localStorage.removeItem(STORAGE_KEY);
+	window.localStorage.removeItem(LEGACY_STORAGE_KEY);
 }
 
 export function summarizeAttempts(attempts: Attempt[]): {
