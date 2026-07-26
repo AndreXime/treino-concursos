@@ -2,11 +2,11 @@
 
 import { useQuestionResolver } from "@/hooks/use-question-resolver";
 import type { Prova, Question } from "@/lib/questions/types";
-import { renderEmphasis } from "@/lib/ui/render-emphasis";
 import {
 	alternativeOptionClass,
 	feedbackPanelClass,
 } from "@/lib/ui/question-styles";
+import { renderEmphasis } from "@/lib/ui/render-emphasis";
 
 interface QuestionResolverProps {
 	prova: Prova;
@@ -26,22 +26,15 @@ export function QuestionResolver({
 
 	return (
 		<article className="rounded-2xl border border-border bg-surface p-5 sm:p-8">
-			<div className="mb-5 flex flex-wrap gap-2 text-xs font-medium text-muted">
-				<span className="rounded-md bg-background px-2 py-1">
-					Questão {question.numero}
-				</span>
-				<span className="rounded-md bg-accent-soft px-2 py-1 text-accent-strong">
+			<div className="mb-5">
+				<span className="inline-flex rounded-md bg-accent-soft px-2 py-1 text-xs font-medium text-accent-strong">
 					{question.disciplina}
 				</span>
-				<span className="rounded-md bg-background px-2 py-1">
-					{prova.banca}
-				</span>
-				<span className="rounded-md bg-background px-2 py-1">{prova.ano}</span>
 			</div>
 
-			<h1 className="whitespace-pre-wrap font-sans text-base leading-relaxed text-foreground sm:text-lg">
+			<h2 className="whitespace-pre-wrap font-sans text-lg leading-relaxed text-foreground sm:text-xl">
 				{renderEmphasis(question.enunciado)}
-			</h1>
+			</h2>
 
 			<fieldset className="mt-8 space-y-3" disabled={revealed}>
 				<legend className="sr-only">Alternativas</legend>
