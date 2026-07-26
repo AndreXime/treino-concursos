@@ -10,28 +10,11 @@ export interface Attempt {
 }
 
 const STORAGE_KEY = "treino-concursos:attempts-v2";
-const LEGACY_STORAGE_KEY = "libre-concursos:attempts-v2";
 
 function canUseStorage(): boolean {
 	return (
 		typeof window !== "undefined" && typeof window.localStorage !== "undefined"
 	);
-}
-
-function readRawAttempts(): string | null {
-	const current = window.localStorage.getItem(STORAGE_KEY);
-	if (current) {
-		return current;
-	}
-
-	const legacy = window.localStorage.getItem(LEGACY_STORAGE_KEY);
-	if (!legacy) {
-		return null;
-	}
-
-	window.localStorage.setItem(STORAGE_KEY, legacy);
-	window.localStorage.removeItem(LEGACY_STORAGE_KEY);
-	return legacy;
 }
 
 export function listAttempts(): Attempt[] {
@@ -40,7 +23,7 @@ export function listAttempts(): Attempt[] {
 	}
 
 	try {
-		const raw = readRawAttempts();
+		const raw = window.localStorage.getItem(STORAGE_KEY);
 		if (!raw) {
 			return [];
 		}
@@ -72,7 +55,6 @@ export function clearAttempts(): void {
 	}
 
 	window.localStorage.removeItem(STORAGE_KEY);
-	window.localStorage.removeItem(LEGACY_STORAGE_KEY);
 }
 
 export function summarizeAttempts(attempts: Attempt[]): {
