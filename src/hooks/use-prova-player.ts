@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import {
 	findNextQuestion,
+	findPreviousQuestion,
 	findQuestionById,
 	loadAnsweredIds,
 	loadCorrectIds,
@@ -30,6 +31,9 @@ export function useProvaPlayer(
 	const nextQuestion = activeQuestion
 		? findNextQuestion(questions, activeQuestion.id)
 		: null;
+	const previousQuestion = activeQuestion
+		? findPreviousQuestion(questions, activeQuestion.id)
+		: null;
 
 	function markAnswered(questionId: string, correct: boolean) {
 		setAnsweredIds((current) => withAddedId(current, questionId));
@@ -41,6 +45,7 @@ export function useProvaPlayer(
 	return {
 		activeQuestion,
 		nextQuestion,
+		previousQuestion,
 		correctIds,
 		answeredIds,
 		setActiveId,

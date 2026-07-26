@@ -25,6 +25,7 @@ export function ProvaPlayer({
 	const {
 		activeQuestion,
 		nextQuestion,
+		previousQuestion,
 		correctIds,
 		answeredIds,
 		setActiveId,
@@ -177,6 +178,9 @@ export function ProvaPlayer({
 				question={activeQuestion}
 				onAnswered={(correct) => markAnswered(activeQuestion.id, correct)}
 				onNext={nextQuestion ? () => setActiveId(nextQuestion.id) : null}
+				onPrevious={
+					previousQuestion ? () => setActiveId(previousQuestion.id) : null
+				}
 			/>
 
 			<details ref={mobileMapRef} className="group lg:hidden">

@@ -13,13 +13,22 @@ interface QuestionResolverProps {
 	question: Question;
 	onAnswered: (correct: boolean) => void;
 	onNext: (() => void) | null;
+	onPrevious: (() => void) | null;
 }
+
+const primaryButtonClass =
+	"rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-strong disabled:cursor-not-allowed disabled:opacity-50";
+const softButtonClass =
+	"rounded-lg bg-accent-soft px-5 py-2.5 text-sm font-semibold text-accent-strong hover:bg-accent hover:text-white";
+const outlineButtonClass =
+	"rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-muted hover:bg-background";
 
 export function QuestionResolver({
 	prova,
 	question,
 	onAnswered,
 	onNext,
+	onPrevious,
 }: QuestionResolverProps) {
 	const { selectedId, setSelectedId, revealed, isCorrect, conferir, resetar } =
 		useQuestionResolver(prova, question, onAnswered);
@@ -67,33 +76,45 @@ export function QuestionResolver({
 				))}
 			</fieldset>
 
-			<div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+			<div className="mt-6 flex flex-col gap-3 lg:flex-row lg:flex-wrap">
 				{!revealed ? (
 					<button
 						type="button"
 						onClick={conferir}
 						disabled={!selectedId}
-						className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-strong disabled:cursor-not-allowed disabled:opacity-50"
+						className={primaryButtonClass}
 					>
 						Conferir
 					</button>
-				) : (
+				) : onNext ? (
+					<button type="button" onClick={onNext} className={primaryButtonClass}>
+						Próxima questão
+					</button>
+				) : null}
+
+				{!revealed && onNext ? (
+					<button type="button" onClick={onNext} className={softButtonClass}>
+						Próxima questão
+					</button>
+				) : null}
+
+				{revealed ? (
 					<button
 						type="button"
 						onClick={resetar}
-						className="rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-muted hover:bg-background"
+						className={outlineButtonClass}
 					>
 						Tentar de novo
 					</button>
-				)}
+				) : null}
 
-				{onNext ? (
+				{onPrevious ? (
 					<button
 						type="button"
-						onClick={onNext}
-						className="rounded-lg bg-accent-soft px-5 py-2.5 text-sm font-semibold text-accent-strong hover:bg-accent hover:text-white"
+						onClick={onPrevious}
+						className={outlineButtonClass}
 					>
-						Próxima questão
+						Anterior
 					</button>
 				) : null}
 			</div>
@@ -107,6 +128,8 @@ export function QuestionResolver({
 						{isCorrect ? "Resposta correta" : "Resposta incorreta"}
 					</p>
 					<p className="mt-1 text-sm text-foreground/90">
+						Sua resposta: <strong className="uppercase">{selectedId}</strong>
+						{" · "}
 						Gabarito:{" "}
 						<strong className="uppercase">{question.gabaritoId}</strong>
 					</p>
