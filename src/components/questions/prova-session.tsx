@@ -22,6 +22,10 @@ export function ProvaSession({
 	initialNumero,
 }: ProvaSessionProps) {
 	const [focusMode, setFocusMode] = useState(false);
+	const [activeQuestionInfo, setActiveQuestionInfo] = useState<{
+		numero: number;
+		total: number;
+	} | null>(null);
 	const canFocus = questions.length > 0;
 
 	useEffect(() => {
@@ -57,13 +61,22 @@ export function ProvaSession({
 						: ""
 				}`}
 			>
-				<Link
-					href="/"
-					data-hide-on-focus
-					className="inline-flex text-sm font-medium text-muted hover:text-accent"
-				>
-					← Todas as provas
-				</Link>
+				{focusMode && activeQuestionInfo ? (
+					<p
+						className="text-sm font-semibold text-foreground"
+						aria-live="polite"
+					>
+						Questão {activeQuestionInfo.numero} de {activeQuestionInfo.total}
+					</p>
+				) : (
+					<Link
+						href="/"
+						data-hide-on-focus
+						className="inline-flex text-sm font-medium text-muted hover:text-accent"
+					>
+						← Todas as provas
+					</Link>
+				)}
 
 				{canFocus ? (
 					<button
@@ -118,6 +131,7 @@ export function ProvaSession({
 					questions={questions}
 					initialNumero={initialNumero}
 					focusMode={focusMode}
+					onActiveQuestionChange={setActiveQuestionInfo}
 				/>
 			)}
 		</div>

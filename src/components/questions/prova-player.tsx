@@ -22,6 +22,7 @@ interface ProvaPlayerProps {
 	questions: Question[];
 	initialNumero?: number;
 	focusMode?: boolean;
+	onActiveQuestionChange?: (info: { numero: number; total: number }) => void;
 }
 
 export function ProvaPlayer({
@@ -29,6 +30,7 @@ export function ProvaPlayer({
 	questions,
 	initialNumero,
 	focusMode = false,
+	onActiveQuestionChange,
 }: ProvaPlayerProps) {
 	const {
 		activeQuestion,
@@ -44,12 +46,24 @@ export function ProvaPlayer({
 	const [justFinished, setJustFinished] = useState(false);
 
 	const activeQuestionId = activeQuestion?.id;
+	const activeNumero = activeQuestion?.numero;
+
 	useEffect(() => {
 		if (!activeQuestionId || focusMode) {
 			return;
 		}
 		chromeRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
 	}, [activeQuestionId, focusMode]);
+
+	useEffect(() => {
+		if (activeNumero === undefined) {
+			return;
+		}
+		onActiveQuestionChange?.({
+			numero: activeNumero,
+			total: questions.length,
+		});
+	}, [activeNumero, questions.length, onActiveQuestionChange]);
 
 	if (questions.length === 0) {
 		return null;
