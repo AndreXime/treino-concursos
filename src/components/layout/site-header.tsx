@@ -8,11 +8,9 @@ export function SiteHeader() {
 			<div className="container mx-auto flex items-center justify-between gap-4 px-4 py-4 sm:px-6">
 				<Link href="/" className="group flex flex-col">
 					<span className="font-display text-xl font-semibold tracking-tight text-foreground group-hover:text-accent-strong sm:text-2xl">
-						LibreConcursos
+						Treino Concursos
 					</span>
-					<span className="text-xs text-muted">
-						Questões de concurso, livres
-					</span>
+					<span className="text-xs text-muted">Treine por prova, com foco</span>
 				</Link>
 
 				<nav

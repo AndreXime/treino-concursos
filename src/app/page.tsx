@@ -9,7 +9,7 @@ export default async function HomePage() {
 			<div className="flex flex-1 flex-col gap-8">
 				<div className="max-w-xl">
 					<p className="text-sm font-semibold uppercase tracking-[0.18em] text-accent">
-						LibreConcursos
+						Treino Concursos
 					</p>
 					<h1 className="mt-3 font-display text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl">
 						Treine por prova, com foco e clareza.
