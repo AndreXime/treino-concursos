@@ -2,6 +2,7 @@
 
 import { useQuestionResolver } from "@/hooks/use-question-resolver";
 import type { Prova, Question } from "@/lib/questions/types";
+import { renderEmphasis } from "@/lib/ui/render-emphasis";
 import {
 	alternativeOptionClass,
 	feedbackPanelClass,
@@ -39,7 +40,7 @@ export function QuestionResolver({
 			</div>
 
 			<h1 className="whitespace-pre-wrap font-sans text-base leading-relaxed text-foreground sm:text-lg">
-				{question.enunciado}
+				{renderEmphasis(question.enunciado)}
 			</h1>
 
 			<fieldset className="mt-8 space-y-3" disabled={revealed}>
@@ -67,7 +68,7 @@ export function QuestionResolver({
 							<span className="mr-2 font-semibold uppercase text-muted">
 								{option.id})
 							</span>
-							{option.texto}
+							{renderEmphasis(option.texto)}
 						</span>
 					</label>
 				))}
