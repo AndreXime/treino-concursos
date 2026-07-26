@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import { QuestionResolver } from "@/components/questions/question-resolver";
 import { useProvaPlayer } from "@/hooks/use-prova-player";
 import type { Prova, Question } from "@/lib/questions/types";
@@ -10,6 +11,11 @@ import {
 	resolveQuestionNavStatus,
 } from "@/lib/ui/question-status";
 import { questionNavCellClass } from "@/lib/ui/question-styles";
+import {
+	firstQuestionWithStatus,
+	sessionCompletionStats,
+	shouldShowCompletion,
+} from "@/lib/ui/session-summary";
 
 interface ProvaPlayerProps {
 	prova: Prova;
@@ -33,6 +39,7 @@ export function ProvaPlayer({
 	} = useProvaPlayer(prova, questions, initialNumero);
 	const chromeRef = useRef<HTMLDivElement>(null);
 	const mobileMapRef = useRef<HTMLDetailsElement>(null);
+	const [justFinished, setJustFinished] = useState(false);
 
 	const activeQuestionId = activeQuestion?.id;
 	useEffect(() => {
@@ -54,24 +61,47 @@ export function ProvaPlayer({
 		);
 	}
 
-	const correctCount = [...correctIds].filter((id) =>
-		questions.some((question) => question.id === id),
-	).length;
-	const answeredInList = [...answeredIds].filter((id) =>
-		questions.some((question) => question.id === id),
-	).length;
-	const wrongCount = answeredInList - correctCount;
+	const stats = sessionCompletionStats(questions, answeredIds, correctIds);
+	const allAnswered = stats.pending === 0;
+	const showCompletion = shouldShowCompletion({
+		hasNext: nextQuestion !== null,
+		justFinished,
+		allAnswered,
+	});
+	const currentId = activeQuestion.id;
+
 	const progressPercent =
 		questions.length === 0
 			? 0
-			: Math.round((answeredInList / questions.length) * 100);
+			: Math.round(((stats.correct + stats.wrong) / questions.length) * 100);
 
 	function selectQuestion(questionId: string) {
+		setJustFinished(false);
 		setActiveId(questionId);
 		if (mobileMapRef.current) {
 			mobileMapRef.current.open = false;
 		}
 	}
+
+	function handleAnswered(correct: boolean) {
+		markAnswered(currentId, correct);
+		if (!nextQuestion) {
+			setJustFinished(true);
+		}
+	}
+
+	const firstWrong = firstQuestionWithStatus(
+		questions,
+		"wrong",
+		answeredIds,
+		correctIds,
+	);
+	const firstPending = firstQuestionWithStatus(
+		questions,
+		"pending",
+		answeredIds,
+		correctIds,
+	);
 
 	function renderMapLegend() {
 		return (
@@ -147,7 +177,7 @@ export function ProvaPlayer({
 						Questão {activeQuestion.numero} de {questions.length}
 					</p>
 					<p className="text-sm text-muted" aria-live="polite">
-						{sessionCompactLabel(correctCount, wrongCount)}
+						{sessionCompactLabel(stats.correct, stats.wrong)}
 					</p>
 				</div>
 				<div
@@ -166,8 +196,8 @@ export function ProvaPlayer({
 				<p className="text-xs text-muted" aria-live="polite">
 					{sessionProgressLabel({
 						total: questions.length,
-						correct: correctCount,
-						wrong: wrongCount,
+						correct: stats.correct,
+						wrong: stats.wrong,
 					})}
 				</p>
 			</div>
@@ -176,12 +206,58 @@ export function ProvaPlayer({
 				key={activeQuestion.id}
 				prova={prova}
 				question={activeQuestion}
-				onAnswered={(correct) => markAnswered(activeQuestion.id, correct)}
+				onAnswered={handleAnswered}
 				onNext={nextQuestion ? () => setActiveId(nextQuestion.id) : null}
 				onPrevious={
 					previousQuestion ? () => setActiveId(previousQuestion.id) : null
 				}
 			/>
+
+			{showCompletion ? (
+				<section
+					className="rounded-2xl border border-accent/30 bg-accent-soft/50 px-5 py-6"
+					aria-labelledby="prova-conclusao-titulo"
+				>
+					<h2
+						id="prova-conclusao-titulo"
+						className="font-display text-xl font-semibold text-foreground"
+					>
+						Sessão concluída
+					</h2>
+					<p className="mt-2 text-sm text-muted">
+						{stats.correct} acerto{stats.correct === 1 ? "" : "s"} ·{" "}
+						{stats.wrong} erro{stats.wrong === 1 ? "" : "s"} · {stats.pending}{" "}
+						pendente{stats.pending === 1 ? "" : "s"} · {stats.taxa}% de
+						aproveitamento
+					</p>
+					<div className="mt-5 flex flex-col gap-3 lg:flex-row lg:flex-wrap">
+						{firstWrong ? (
+							<button
+								type="button"
+								onClick={() => selectQuestion(firstWrong.id)}
+								className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white hover:bg-accent-strong"
+							>
+								Revisar erros
+							</button>
+						) : null}
+						{firstPending ? (
+							<button
+								type="button"
+								onClick={() => selectQuestion(firstPending.id)}
+								className="rounded-lg bg-accent-soft px-5 py-2.5 text-sm font-semibold text-accent-strong hover:bg-accent hover:text-white"
+							>
+								Continuar pendentes
+							</button>
+						) : null}
+						<Link
+							href="/historico"
+							className="inline-flex items-center justify-center rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-muted hover:bg-background"
+						>
+							Ver histórico
+						</Link>
+					</div>
+				</section>
+			) : null}
 
 			<details ref={mobileMapRef} className="group lg:hidden">
 				<summary className="cursor-pointer list-none rounded-lg border border-border bg-surface px-4 py-3 text-sm font-semibold text-foreground marker:content-none [&::-webkit-details-marker]:hidden">
