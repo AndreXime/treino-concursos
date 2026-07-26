@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { useQuestionResolver } from "@/hooks/use-question-resolver";
 import type { Prova, Question } from "@/lib/questions/types";
 import {
@@ -7,6 +8,7 @@ import {
 	feedbackPanelClass,
 } from "@/lib/ui/question-styles";
 import { renderEmphasis } from "@/lib/ui/render-emphasis";
+import { resolveSessionHotkey } from "@/lib/ui/session-hotkeys";
 
 interface QuestionResolverProps {
 	prova: Prova;
@@ -32,6 +34,59 @@ export function QuestionResolver({
 }: QuestionResolverProps) {
 	const { selectedId, setSelectedId, revealed, isCorrect, conferir, resetar } =
 		useQuestionResolver(prova, question, onAnswered);
+
+	useEffect(() => {
+		function onKeyDown(event: KeyboardEvent) {
+			const action = resolveSessionHotkey({
+				key: event.key,
+				target: event.target,
+				revealed,
+			});
+			if (!action) {
+				return;
+			}
+
+			if (action.startsWith("select-")) {
+				const optionId = action.slice("select-".length);
+				if (question.alternativas.some((option) => option.id === optionId)) {
+					event.preventDefault();
+					setSelectedId(optionId);
+				}
+				return;
+			}
+
+			if (action === "conferir") {
+				if (!selectedId) {
+					return;
+				}
+				event.preventDefault();
+				conferir();
+				return;
+			}
+
+			if (action === "prev" && onPrevious) {
+				event.preventDefault();
+				onPrevious();
+				return;
+			}
+
+			if (action === "next" && onNext) {
+				event.preventDefault();
+				onNext();
+			}
+		}
+
+		window.addEventListener("keydown", onKeyDown);
+		return () => window.removeEventListener("keydown", onKeyDown);
+	}, [
+		revealed,
+		selectedId,
+		question.alternativas,
+		setSelectedId,
+		conferir,
+		onNext,
+		onPrevious,
+	]);
 
 	return (
 		<article className="rounded-2xl border border-border bg-surface p-5 sm:p-8">

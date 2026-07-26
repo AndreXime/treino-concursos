@@ -17,14 +17,25 @@ export function useProvaPlayer(
 	questions: Question[],
 	initialNumero?: number,
 ) {
-	const [activeId, setActiveId] = useState<string | null>(null);
+	const [activeId, setActiveId] = useState<string | null>(
+		() => questions[0]?.id ?? null,
+	);
 	const [correctIds, setCorrectIds] = useState<Set<string>>(() => new Set());
 	const [answeredIds, setAnsweredIds] = useState<Set<string>>(() => new Set());
 
 	useEffect(() => {
 		setCorrectIds(loadCorrectIds(prova.id));
 		setAnsweredIds(loadAnsweredIds(prova.id));
-		setActiveId(resolveInitialQuestionId(questions, prova.id, initialNumero));
+		const resolved = resolveInitialQuestionId(
+			questions,
+			prova.id,
+			initialNumero,
+		);
+		if (resolved) {
+			setActiveId(resolved);
+		} else if (questions[0]) {
+			setActiveId(questions[0].id);
+		}
 	}, [prova.id, questions, initialNumero]);
 
 	const activeQuestion = findQuestionById(questions, activeId);
