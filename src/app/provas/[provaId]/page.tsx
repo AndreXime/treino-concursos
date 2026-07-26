@@ -43,27 +43,29 @@ export default async function ProvaPage({
 
 	return (
 		<div className="space-y-6">
-			<Link
-				href="/"
-				className="inline-flex text-sm font-medium text-muted hover:text-accent"
-			>
-				← Todas as provas
-			</Link>
+			<div data-hide-on-focus className="space-y-6">
+				<Link
+					href="/"
+					className="inline-flex text-sm font-medium text-muted hover:text-accent"
+				>
+					← Todas as provas
+				</Link>
 
-			<header className="space-y-2">
-				<h1 className="font-display text-3xl font-semibold tracking-tight text-foreground">
-					{prova.titulo}
-				</h1>
-				<p className="text-sm text-muted sm:text-base">
-					{prova.orgao} · {prova.cargo} · {prova.banca} · {prova.ano}
-				</p>
-			</header>
+				<header className="space-y-2">
+					<h1 className="font-display text-3xl font-semibold tracking-tight text-foreground">
+						{prova.titulo}
+					</h1>
+					<p className="text-sm text-muted sm:text-base">
+						{prova.orgao} · {prova.cargo} · {prova.banca} · {prova.ano}
+					</p>
+				</header>
 
-			<QuestionFiltersForm
-				provaId={prova.id}
-				disciplinas={options.disciplinas}
-				current={{ disciplina }}
-			/>
+				<QuestionFiltersForm
+					provaId={prova.id}
+					disciplinas={options.disciplinas}
+					current={{ disciplina }}
+				/>
+			</div>
 
 			{questions.length === 0 ? (
 				<div className="rounded-xl border border-dashed border-border bg-surface/70 px-5 py-10 text-center">

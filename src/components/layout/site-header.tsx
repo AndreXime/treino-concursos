@@ -4,7 +4,7 @@ const links = [{ href: "/historico", label: "Histórico" }] as const;
 
 export function SiteHeader() {
 	return (
-		<header className="border-b border-border/80 bg-surface">
+		<header className="border-b border-border/80 bg-surface" data-hide-on-focus>
 			<div className="container mx-auto flex items-center justify-between gap-4 px-4 py-4 sm:px-6">
 				<Link href="/" className="group flex flex-col">
 					<span className="font-display text-xl font-semibold tracking-tight text-foreground group-hover:text-accent-strong sm:text-2xl">

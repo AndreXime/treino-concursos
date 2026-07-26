@@ -40,14 +40,39 @@ export function ProvaPlayer({
 	const chromeRef = useRef<HTMLDivElement>(null);
 	const mobileMapRef = useRef<HTMLDetailsElement>(null);
 	const [justFinished, setJustFinished] = useState(false);
+	const [focusMode, setFocusMode] = useState(false);
 
 	const activeQuestionId = activeQuestion?.id;
 	useEffect(() => {
-		if (!activeQuestionId) {
+		if (!activeQuestionId || focusMode) {
 			return;
 		}
 		chromeRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-	}, [activeQuestionId]);
+	}, [activeQuestionId, focusMode]);
+
+	useEffect(() => {
+		if (focusMode) {
+			document.documentElement.dataset.focusMode = "prova";
+		} else {
+			delete document.documentElement.dataset.focusMode;
+		}
+		return () => {
+			delete document.documentElement.dataset.focusMode;
+		};
+	}, [focusMode]);
+
+	useEffect(() => {
+		if (!focusMode) {
+			return;
+		}
+		function onKeyDown(event: KeyboardEvent) {
+			if (event.key === "Escape") {
+				setFocusMode(false);
+			}
+		}
+		window.addEventListener("keydown", onKeyDown);
+		return () => window.removeEventListener("keydown", onKeyDown);
+	}, [focusMode]);
 
 	if (questions.length === 0) {
 		return null;
@@ -168,62 +193,83 @@ export function ProvaPlayer({
 	return (
 		<div className="space-y-6">
 			<div
-				ref={chromeRef}
-				data-prova-chrome
-				className="sticky top-0 z-10 -mx-1 space-y-2 border-b border-border bg-background/95 px-1 py-3 backdrop-blur"
+				className={`flex justify-end ${focusMode ? "sticky top-0 z-20 bg-background/95 py-2 backdrop-blur" : ""}`}
 			>
-				<div className="flex flex-wrap items-baseline justify-between gap-2">
-					<p className="text-sm font-medium text-foreground">
-						Questão {activeQuestion.numero} de {questions.length}
-					</p>
-					<p className="text-sm text-muted" aria-live="polite">
-						{sessionCompactLabel(stats.correct, stats.wrong)}
-					</p>
-				</div>
-				<div
-					className="h-1.5 overflow-hidden rounded-full bg-border"
-					role="progressbar"
-					aria-valuenow={progressPercent}
-					aria-valuemin={0}
-					aria-valuemax={100}
-					aria-label="Progresso da sessão"
+				<button
+					type="button"
+					onClick={() => setFocusMode((current) => !current)}
+					aria-pressed={focusMode}
+					title={focusMode ? "Sair do foco (Esc)" : "Esconder chrome e mapa"}
+					className="rounded-lg border border-border bg-surface px-3 py-2 text-sm font-semibold text-foreground hover:border-accent/40 hover:text-accent-strong"
 				>
-					<div
-						className="h-full rounded-full bg-accent transition-[width] duration-300"
-						style={{ width: `${progressPercent}%` }}
-					/>
-				</div>
-				<p className="text-xs text-muted" aria-live="polite">
-					{sessionProgressLabel({
-						total: questions.length,
-						correct: stats.correct,
-						wrong: stats.wrong,
-					})}
-				</p>
+					{focusMode ? "Sair do foco" : "Modo foco"}
+				</button>
 			</div>
 
-			<details ref={mobileMapRef} className="group lg:hidden">
-				<summary className="cursor-pointer list-none rounded-lg border border-border bg-surface px-4 py-3 text-sm font-semibold text-foreground marker:content-none [&::-webkit-details-marker]:hidden">
-					<span className="flex items-center justify-between gap-2">
-						Mapa da prova
-						<span className="text-muted group-open:hidden">▾</span>
-						<span className="hidden text-muted group-open:inline">▴</span>
-					</span>
-				</summary>
-				<nav aria-label="Navegação das questões" className="mt-3 space-y-3">
-					{renderMapLegend()}
-					{renderMapGrid(activeQuestion.id)}
-				</nav>
-			</details>
+			{!focusMode ? (
+				<div
+					ref={chromeRef}
+					className="sticky top-0 z-10 -mx-1 space-y-2 border-b border-border bg-background/95 px-1 py-3 backdrop-blur"
+				>
+					<div className="flex flex-wrap items-baseline justify-between gap-2">
+						<p className="text-sm font-medium text-foreground">
+							Questão {activeQuestion.numero} de {questions.length}
+						</p>
+						<p className="text-sm text-muted" aria-live="polite">
+							{sessionCompactLabel(stats.correct, stats.wrong)}
+						</p>
+					</div>
+					<div
+						className="h-1.5 overflow-hidden rounded-full bg-border"
+						role="progressbar"
+						aria-valuenow={progressPercent}
+						aria-valuemin={0}
+						aria-valuemax={100}
+						aria-label="Progresso da sessão"
+					>
+						<div
+							className="h-full rounded-full bg-accent transition-[width] duration-300"
+							style={{ width: `${progressPercent}%` }}
+						/>
+					</div>
+					<p className="text-xs text-muted" aria-live="polite">
+						{sessionProgressLabel({
+							total: questions.length,
+							correct: stats.correct,
+							wrong: stats.wrong,
+						})}
+					</p>
+				</div>
+			) : null}
 
-			<nav
-				aria-label="Navegação das questões"
-				className="hidden space-y-3 lg:block"
-			>
-				<p className="text-sm font-semibold text-foreground">Mapa da prova</p>
-				{renderMapLegend()}
-				{renderMapGrid(activeQuestion.id)}
-			</nav>
+			{!focusMode ? (
+				<>
+					<details ref={mobileMapRef} className="group lg:hidden">
+						<summary className="cursor-pointer list-none rounded-lg border border-border bg-surface px-4 py-3 text-sm font-semibold text-foreground marker:content-none [&::-webkit-details-marker]:hidden">
+							<span className="flex items-center justify-between gap-2">
+								Mapa da prova
+								<span className="text-muted group-open:hidden">▾</span>
+								<span className="hidden text-muted group-open:inline">▴</span>
+							</span>
+						</summary>
+						<nav aria-label="Navegação das questões" className="mt-3 space-y-3">
+							{renderMapLegend()}
+							{renderMapGrid(activeQuestion.id)}
+						</nav>
+					</details>
+
+					<nav
+						aria-label="Navegação das questões"
+						className="hidden space-y-3 lg:block"
+					>
+						<p className="text-sm font-semibold text-foreground">
+							Mapa da prova
+						</p>
+						{renderMapLegend()}
+						{renderMapGrid(activeQuestion.id)}
+					</nav>
+				</>
+			) : null}
 
 			<QuestionResolver
 				key={activeQuestion.id}
@@ -236,7 +282,7 @@ export function ProvaPlayer({
 				}
 			/>
 
-			{showCompletion ? (
+			{!focusMode && showCompletion ? (
 				<section
 					className="rounded-2xl border border-accent/30 bg-accent-soft/50 px-5 py-6"
 					aria-labelledby="prova-conclusao-titulo"

@@ -44,3 +44,11 @@ body {
 	background: var(--accent-soft);
 	color: var(--accent-strong);
 }
+
+html[data-focus-mode="prova"] [data-hide-on-focus] {
+	display: none !important;
+}
+
+html[data-focus-mode="prova"] main {
+	padding-block: 1rem;
+}

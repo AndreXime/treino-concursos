@@ -39,7 +39,10 @@ export default function RootLayout({
 				<main className="container mx-auto flex-1 px-4 py-8 sm:px-6 sm:py-10">
 					{children}
 				</main>
-				<footer className="border-t border-border/70 py-6 text-center text-xs text-muted">
+				<footer
+					className="border-t border-border/70 py-6 text-center text-xs text-muted"
+					data-hide-on-focus
+				>
 					LibreConcursos · BB Agente Comercial 2022 (Cesgranrio)
 				</footer>
 			</body>
