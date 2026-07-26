@@ -1,15 +1,21 @@
+import type { QuestionNavStatus } from "@/lib/ui/question-status";
+
 export function questionNavCellClass(
+	status: QuestionNavStatus,
 	isActive: boolean,
-	isCorrect: boolean,
 ): string {
-	if (isActive && isCorrect) {
-		return "border-success bg-success text-white ring-2 ring-success/30";
+	if (status === "correct") {
+		return isActive
+			? "border-success bg-success text-white ring-2 ring-success/40"
+			: "border-success bg-success text-white hover:border-success hover:bg-success";
+	}
+	if (status === "wrong") {
+		return isActive
+			? "border-danger bg-danger text-white ring-2 ring-danger/40"
+			: "border-danger bg-danger text-white hover:border-danger hover:bg-danger";
 	}
 	if (isActive) {
-		return "border-accent bg-accent text-white";
-	}
-	if (isCorrect) {
-		return "border-success bg-success text-white hover:border-success hover:bg-success";
+		return "border-accent bg-accent text-white ring-2 ring-accent/30";
 	}
 	return "border-border bg-surface text-muted hover:border-accent/40 hover:text-accent-strong";
 }

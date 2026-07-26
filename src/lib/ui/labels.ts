@@ -12,3 +12,18 @@ export function answeredCountLabel(total: number, answered: number): string {
 	}
 	return `${base} · ${answered} respondida${answered === 1 ? "" : "s"}`;
 }
+
+export function sessionProgressLabel(input: {
+	total: number;
+	correct: number;
+	wrong: number;
+}): string {
+	const answered = input.correct + input.wrong;
+	const acerto = input.correct === 1 ? "acerto" : "acertos";
+	const erro = input.wrong === 1 ? "erro" : "erros";
+	return `${answered}/${input.total} · ${input.correct} ${acerto} · ${input.wrong} ${erro}`;
+}
+
+export function sessionCompactLabel(correct: number, wrong: number): string {
+	return `${correct}✓ ${wrong}✗`;
+}
