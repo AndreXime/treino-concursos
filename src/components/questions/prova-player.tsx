@@ -202,6 +202,29 @@ export function ProvaPlayer({
 				</p>
 			</div>
 
+			<details ref={mobileMapRef} className="group lg:hidden">
+				<summary className="cursor-pointer list-none rounded-lg border border-border bg-surface px-4 py-3 text-sm font-semibold text-foreground marker:content-none [&::-webkit-details-marker]:hidden">
+					<span className="flex items-center justify-between gap-2">
+						Mapa da prova
+						<span className="text-muted group-open:hidden">▾</span>
+						<span className="hidden text-muted group-open:inline">▴</span>
+					</span>
+				</summary>
+				<nav aria-label="Navegação das questões" className="mt-3 space-y-3">
+					{renderMapLegend()}
+					{renderMapGrid(activeQuestion.id)}
+				</nav>
+			</details>
+
+			<nav
+				aria-label="Navegação das questões"
+				className="hidden space-y-3 lg:block"
+			>
+				<p className="text-sm font-semibold text-foreground">Mapa da prova</p>
+				{renderMapLegend()}
+				{renderMapGrid(activeQuestion.id)}
+			</nav>
+
 			<QuestionResolver
 				key={activeQuestion.id}
 				prova={prova}
@@ -258,29 +281,6 @@ export function ProvaPlayer({
 					</div>
 				</section>
 			) : null}
-
-			<details ref={mobileMapRef} className="group lg:hidden">
-				<summary className="cursor-pointer list-none rounded-lg border border-border bg-surface px-4 py-3 text-sm font-semibold text-foreground marker:content-none [&::-webkit-details-marker]:hidden">
-					<span className="flex items-center justify-between gap-2">
-						Mapa da prova
-						<span className="text-muted group-open:hidden">▾</span>
-						<span className="hidden text-muted group-open:inline">▴</span>
-					</span>
-				</summary>
-				<nav aria-label="Navegação das questões" className="mt-3 space-y-3">
-					{renderMapLegend()}
-					{renderMapGrid(activeQuestion.id)}
-				</nav>
-			</details>
-
-			<nav
-				aria-label="Navegação das questões"
-				className="hidden space-y-3 lg:block"
-			>
-				<p className="text-sm font-semibold text-foreground">Mapa da prova</p>
-				{renderMapLegend()}
-				{renderMapGrid(activeQuestion.id)}
-			</nav>
 		</div>
 	);
 }
