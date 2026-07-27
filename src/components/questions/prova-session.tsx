@@ -70,7 +70,7 @@ export function ProvaSession({
 					</p>
 				) : (
 					<Link
-						href="/"
+						href="/provas"
 						data-hide-on-focus
 						className="inline-flex text-sm font-medium text-muted hover:text-accent"
 					>

@@ -1,6 +1,9 @@
 import Link from "next/link";
 
-const links = [{ href: "/historico", label: "Histórico" }] as const;
+const links = [
+	{ href: "/provas", label: "Provas" },
+	{ href: "/historico", label: "Histórico" },
+] as const;
 
 export function SiteHeader() {
 	return (
