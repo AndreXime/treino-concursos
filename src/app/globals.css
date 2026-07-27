@@ -60,10 +60,6 @@ body:has(.home-hero) > main {
 	padding: 0;
 }
 
-body:has(.home-hero) > footer {
-	display: none;
-}
-
 .home-hero {
 	position: relative;
 	isolation: isolate;
