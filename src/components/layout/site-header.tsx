@@ -22,25 +22,21 @@ export function SiteHeader() {
 			data-hide-on-focus
 		>
 			<div className="container mx-auto flex items-center justify-between gap-4 px-4 py-4 sm:px-6">
-				<Link href="/" className="group flex flex-col">
-					<span
-						className={
-							onHome
-								? "font-display text-xl font-semibold tracking-tight text-white group-hover:text-white/90 sm:text-2xl"
-								: "font-display text-xl font-semibold tracking-tight text-foreground group-hover:text-accent-strong sm:text-2xl"
-						}
-					>
-						Treino Concursos
-					</span>
-					<span
-						className={onHome ? "text-xs text-white/70" : "text-xs text-muted"}
-					>
-						Treine por prova, com foco
-					</span>
-				</Link>
+				{onHome ? (
+					<span className="sr-only">Treino Concursos</span>
+				) : (
+					<Link href="/" className="group flex flex-col">
+						<span className="font-display text-xl font-semibold tracking-tight text-foreground group-hover:text-accent-strong sm:text-2xl">
+							Treino Concursos
+						</span>
+						<span className="text-xs text-muted">
+							Treine por prova, com foco
+						</span>
+					</Link>
+				)}
 
 				<nav
-					className="flex items-center gap-1 sm:gap-2"
+					className={`flex items-center gap-1 sm:gap-2 ${onHome ? "ml-auto" : ""}`}
 					aria-label="Principal"
 				>
 					{links.map((link) => (

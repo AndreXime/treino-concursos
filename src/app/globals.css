@@ -53,7 +53,7 @@ html[data-focus-mode="prova"] main {
 	padding-block: 1rem;
 }
 
-/* Hallmark · pre-emit critique: P4 H5 E4 S4 R4 V4 · home hero atmospheric teal */
+/* Hallmark · pre-emit critique: P5 H5 E4 S5 R4 V4 · home hero poster cartaz */
 body:has(.home-hero) > main {
 	width: 100%;
 	max-width: none;
@@ -68,35 +68,27 @@ body:has(.home-hero) > footer {
 	position: relative;
 	isolation: isolate;
 	display: flex;
-	align-items: center;
 	width: 100%;
 	min-height: 100svh;
-	padding-block: 6.5rem 3.5rem;
 	color: #f7fbfb;
 	background:
 		radial-gradient(
-			120% 80% at 12% 0%,
-			rgba(228, 243, 243, 0.22) 0%,
-			transparent 55%
+			110% 70% at 8% 15%,
+			rgba(228, 243, 243, 0.2) 0%,
+			transparent 52%
 		),
 		radial-gradient(
-			90% 70% at 88% 100%,
-			rgba(10, 79, 79, 0.55) 0%,
-			transparent 50%
+			80% 60% at 100% 90%,
+			rgba(10, 79, 79, 0.65) 0%,
+			transparent 48%
 		),
 		linear-gradient(
-			155deg,
+			160deg,
 			var(--accent-strong) 0%,
-			var(--accent) 48%,
-			#0c5c5c 100%
+			var(--accent) 42%,
+			#084646 100%
 		);
 	overflow: clip;
-}
-
-@media (min-width: 640px) {
-	.home-hero {
-		padding-block: 7.5rem 4.5rem;
-	}
 }
 
 .home-hero-grain {
@@ -104,7 +96,7 @@ body:has(.home-hero) > footer {
 	inset: 0;
 	z-index: 0;
 	pointer-events: none;
-	opacity: 0.055;
+	opacity: 0.06;
 	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 	background-size: 180px 180px;
 }
@@ -113,21 +105,163 @@ body:has(.home-hero) > footer {
 	position: relative;
 	z-index: 1;
 	width: 100%;
-	max-width: 72rem;
+	max-width: 80rem;
 	margin-inline: auto;
-	padding-inline: 1rem;
+	padding-inline: 1.25rem;
 }
 
 @media (min-width: 640px) {
 	.home-hero-inner {
-		padding-inline: 1.5rem;
+		padding-inline: 2rem;
 	}
+}
+
+.home-hero-poster {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100svh;
+	padding-top: 6.75rem;
+	padding-bottom: 2rem;
+	gap: 2rem;
+}
+
+@media (min-width: 640px) {
+	.home-hero-poster {
+		padding-top: 7.5rem;
+		padding-bottom: 2.75rem;
+		gap: 2.5rem;
+	}
+}
+
+.home-hero-kicker {
+	margin: 0;
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.22em;
+	text-transform: uppercase;
+	color: rgb(255 255 255 / 0.72);
+}
+
+.home-hero-poster-main {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1.25rem;
+	min-width: 0;
+}
+
+.home-hero-brand {
+	margin: 0;
+	max-width: 100%;
+	font-family: var(--font-display), "Fraunces", serif;
+	font-size: clamp(3.75rem, 18vw, 11rem);
+	font-weight: 700;
+	line-height: 0.88;
+	letter-spacing: -0.045em;
+	overflow-wrap: anywhere;
+	color: #fff;
+	text-wrap: balance;
+}
+
+.home-hero-tagline {
+	margin: 0;
+	max-width: 18ch;
+	font-family: var(--font-display), "Fraunces", serif;
+	font-size: clamp(1.5rem, 4.2vw, 2.75rem);
+	font-weight: 500;
+	line-height: 1.15;
+	letter-spacing: -0.02em;
+	color: rgb(255 255 255 / 0.92);
+}
+
+.home-hero-poster-foot {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	max-width: 36rem;
+	padding-top: 1.25rem;
+	border-top: 1px solid rgb(255 255 255 / 0.22);
+}
+
+@media (min-width: 1024px) {
+	.home-hero-poster-foot {
+		flex-direction: row;
+		align-items: flex-end;
+		justify-content: space-between;
+		max-width: none;
+		gap: 2rem;
+	}
+}
+
+.home-hero-support {
+	margin: 0;
+	max-width: 28rem;
+	font-size: 1rem;
+	line-height: 1.55;
+	color: rgb(255 255 255 / 0.78);
+}
+
+@media (min-width: 640px) {
+	.home-hero-support {
+		font-size: 1.125rem;
+	}
+}
+
+.home-hero-actions {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	flex-shrink: 0;
+}
+
+@media (min-width: 1024px) {
+	.home-hero-actions {
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+.home-hero-cta-primary,
+.home-hero-cta-secondary {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.5rem;
+	padding: 0.85rem 1.5rem;
+	font-size: 0.875rem;
+	font-weight: 600;
+	transition:
+		background-color 160ms ease,
+		border-color 160ms ease,
+		color 160ms ease;
+}
+
+.home-hero-cta-primary {
+	background: #fff;
+	color: var(--accent-strong);
+	box-shadow: 0 1px 2px rgb(0 0 0 / 0.08);
+}
+
+.home-hero-cta-primary:hover {
+	background: var(--accent-soft);
+}
+
+.home-hero-cta-secondary {
+	border: 1px solid rgb(255 255 255 / 0.45);
+	color: #fff;
+}
+
+.home-hero-cta-secondary:hover {
+	border-color: #fff;
+	background: rgb(255 255 255 / 0.1);
 }
 
 @keyframes home-hero-rise {
 	from {
 		opacity: 0;
-		transform: translateY(0.85rem);
+		transform: translateY(1rem);
 	}
 	to {
 		opacity: 1;
@@ -136,19 +270,19 @@ body:has(.home-hero) > footer {
 }
 
 .home-hero-rise {
-	animation: home-hero-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+	animation: home-hero-rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .home-hero-rise-delay-1 {
-	animation-delay: 80ms;
+	animation-delay: 90ms;
 }
 
 .home-hero-rise-delay-2 {
-	animation-delay: 160ms;
+	animation-delay: 180ms;
 }
 
 .home-hero-rise-delay-3 {
-	animation-delay: 240ms;
+	animation-delay: 270ms;
 }
 
 @media (prefers-reduced-motion: reduce) {
