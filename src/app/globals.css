@@ -121,14 +121,14 @@ body:has(.home-hero) > footer {
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: 100svh;
-	padding-top: 6.75rem;
+	padding-top: 2rem;
 	padding-bottom: 2rem;
 	gap: 2rem;
 }
 
 @media (min-width: 640px) {
 	.home-hero-poster {
-		padding-top: 7.5rem;
+		padding-top: 2.75rem;
 		padding-bottom: 2.75rem;
 		gap: 2.5rem;
 	}
