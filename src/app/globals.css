@@ -54,18 +54,24 @@ html[data-focus-mode="prova"] main {
 }
 
 /* Hallmark · pre-emit critique: P4 H5 E4 S4 R4 V4 · home hero atmospheric teal */
+body:has(.home-hero) > main {
+	width: 100%;
+	max-width: none;
+	padding: 0;
+}
+
+body:has(.home-hero) > footer {
+	display: none;
+}
+
 .home-hero {
 	position: relative;
 	isolation: isolate;
 	display: flex;
 	align-items: center;
-	width: 100vw;
-	max-width: 100vw;
-	margin-left: calc(50% - 50vw);
-	margin-right: calc(50% - 50vw);
-	margin-top: -2rem;
-	min-height: min(100svh - 5.5rem, 42rem);
-	padding-block: 3.5rem;
+	width: 100%;
+	min-height: 100svh;
+	padding-block: 6.5rem 3.5rem;
 	color: #f7fbfb;
 	background:
 		radial-gradient(
@@ -89,8 +95,7 @@ html[data-focus-mode="prova"] main {
 
 @media (min-width: 640px) {
 	.home-hero {
-		margin-top: -2.5rem;
-		padding-block: 4.5rem;
+		padding-block: 7.5rem 4.5rem;
 	}
 }
 
