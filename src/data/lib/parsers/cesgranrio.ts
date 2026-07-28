@@ -31,7 +31,7 @@ export function parseCesgranrioRaw(
 ): Map<number, ParsedQuestion> {
 	const clean = applyNoise(raw, config);
 	const questionRegex =
-		/(?:^|\n)(\d{1,3})\n(?=\([A-E]\)|[A-ZÀ-Úa-zà-ú0-9"“*])/g;
+		/(?:^|\n)(\d{1,3})\n(?=\([A-E]\)|[A-ZÀ-Úa-zà-ú"“*])/g;
 	const matches = Array.from(clean.matchAll(questionRegex));
 	const byNumero = new Map<number, ParsedQuestion>();
 

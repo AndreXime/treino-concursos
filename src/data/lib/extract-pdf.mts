@@ -127,7 +127,20 @@ async function extractPdfSource(
 
 	try {
 		const textResult = await parser.getText({ pageJoiner: "" });
-		const imagesByPage = await exportEmbeddedImages(parser, imagesDir);
+		let imagesByPage = new Map<number, ExportedImage[]>();
+		try {
+			imagesByPage = await Promise.race([
+				exportEmbeddedImages(parser, imagesDir),
+				new Promise<Map<number, ExportedImage[]>>((_, reject) => {
+					setTimeout(() => reject(new Error("timeout 20s")), 20_000);
+				}),
+			]);
+		} catch (error) {
+			console.warn(
+				`  Aviso: falha ao extrair imagens (${error instanceof Error ? error.message : error})`,
+			);
+			fs.mkdirSync(imagesDir, { recursive: true });
+		}
 		const output = buildTextWithImagePlaceholders(
 			textResult.pages,
 			textResult.total,
