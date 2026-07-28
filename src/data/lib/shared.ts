@@ -4,7 +4,6 @@
 import fs from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { PDFParse } from "pdf-parse";
 import type { QuestionOption } from "@/lib/questions/types";
 import {
 	DISCIPLINAS_BB_AC,
@@ -209,29 +208,8 @@ export async function parseGabaritoPdf(
 	pdfPath: string,
 	gabaritoNumero: number,
 ): Promise<Record<number, string>> {
-	const buf = fs.readFileSync(pdfPath);
-	const parser = new PDFParse({ data: buf });
-	try {
-		const result = await parser.getText({ pageJoiner: "" });
-		const text = result.text.replace(/\r\n/g, "\n");
-		const marker = `GABARITO ${gabaritoNumero}`;
-		const start = text.indexOf(marker);
-		if (start < 0) {
-			throw new Error(`Bloco ${marker} não encontrado em ${pdfPath}`);
-		}
-		const next = text.indexOf("GABARITO ", start + marker.length);
-		const block = next >= 0 ? text.slice(start, next) : text.slice(start);
-
-		const gabarito: Record<number, string> = {};
-		for (const match of block.matchAll(
-			/(?<!\d)(\d{1,2})\s*-\s*([A-E])\b/gi,
-		)) {
-			gabarito[Number.parseInt(match[1], 10)] = match[2].toLowerCase();
-		}
-		return gabarito;
-	} finally {
-		await parser.destroy();
-	}
+	const { loadGabaritoFromPdf } = await import("./gabarito");
+	return loadGabaritoFromPdf(pdfPath, "cesgranrio", { gabaritoNumero });
 }
 
 export function findGabaritoPdf(provaLetter: string): string {
