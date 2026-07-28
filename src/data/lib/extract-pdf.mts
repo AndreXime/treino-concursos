@@ -1,12 +1,8 @@
 import fs from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
 import { PDFParse } from "pdf-parse";
-
-const LIB_ROOT = dirname(fileURLToPath(import.meta.url));
-const DATA_ROOT = join(LIB_ROOT, "..");
-const RAW_DIR = join(DATA_ROOT, "raw");
-const ARTEFACTS_DIR = join(LIB_ROOT, "artefacts");
+import { getConcurso } from "./concursos";
+import { ARTEFACTS_DIR, RAW_DIR } from "./shared";
 
 const MIN_IMAGE_SIDE = 100;
 
@@ -118,23 +114,11 @@ function buildTextWithImagePlaceholders(
 		.join("\n\n");
 }
 
-function resolveProvaPdf(slug: string): string {
-	const files = fs.readdirSync(RAW_DIR);
-	const match = files.find(
-		(name) =>
-			name.startsWith(`PROVA ${slug} `) &&
-			name.endsWith(".pdf") &&
-			!name.startsWith("GABARITO"),
-	);
-	if (!match) {
-		throw new Error(`PDF da prova ${slug} não encontrado em ${RAW_DIR}`);
-	}
-	return join(RAW_DIR, match);
-}
-
-async function extractProva(slug: string) {
-	const pdfPath = resolveProvaPdf(slug);
-	const outDir = join(ARTEFACTS_DIR, `PROVA-${slug}`);
+async function extractPdfSource(
+	pdfPath: string,
+	outDir: string,
+	label: string,
+) {
 	const imagesDir = join(outDir, "images");
 	fs.mkdirSync(outDir, { recursive: true });
 
@@ -154,14 +138,9 @@ async function extractProva(slug: string) {
 		fs.writeFileSync(rawPath, `${output.trimEnd()}\n`);
 
 		const exported = [...imagesByPage.values()].flat();
-		console.log(`Prova ${slug}: ${rawPath}`);
+		console.log(`${label}: ${rawPath}`);
 		if (exported.length > 0) {
 			console.log(`  ${exported.length} imagem(ns) em ${imagesDir}`);
-			for (const image of exported) {
-				console.log(
-					`  ${imagePlaceholder(image.number)} -> ${image.fileName} (pág. ${image.pageNumber})`,
-				);
-			}
 		} else {
 			console.log("  Nenhuma imagem relevante.");
 		}
@@ -170,12 +149,22 @@ async function extractProva(slug: string) {
 	}
 }
 
-const slugs = process.argv.slice(2).map((s) => s.toUpperCase());
+const slugs = process.argv.slice(2);
 if (slugs.length === 0) {
-	console.error("Uso: npx tsx extract-pdf.mts A [B] [C]");
+	console.error("Uso: npx tsx extract-pdf.mts <slug> [...]");
 	process.exit(1);
 }
 
 for (const slug of slugs) {
-	await extractProva(slug);
+	const config = getConcurso(slug);
+	for (const source of config.provaPdfs) {
+		const pdfPath = join(RAW_DIR, source.fileName);
+		if (!fs.existsSync(pdfPath)) {
+			throw new Error(`PDF não encontrado: ${pdfPath}`);
+		}
+		const dirName = source.artefactKey
+			? `${config.slug}-${source.artefactKey}`
+			: config.slug;
+		await extractPdfSource(pdfPath, join(ARTEFACTS_DIR, dirName), dirName);
+	}
 }
