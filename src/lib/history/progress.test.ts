@@ -12,6 +12,7 @@ function stubQuestion(id: string): Question {
 		alternativas: [],
 		gabaritoId: "a",
 		disciplina: "X",
+		tipo: "multipla",
 	};
 }
 

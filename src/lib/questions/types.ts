@@ -3,6 +3,8 @@ export interface QuestionOption {
 	texto: string;
 }
 
+export type QuestionTipo = "multipla" | "certo_errado";
+
 export interface Question {
 	id: string;
 	provaId: string;
@@ -11,6 +13,7 @@ export interface Question {
 	alternativas: QuestionOption[];
 	gabaritoId: string;
 	disciplina: string;
+	tipo: QuestionTipo;
 }
 
 export interface Prova {
