@@ -13,12 +13,66 @@ function applyNoise(text: string, config: ConcursoConfig): string {
 	return out.replace(/\n{3,}/g, "\n\n");
 }
 
+function isSectionHeader(line: string): boolean {
+	const t = line.trim();
+	if (!t || t.length > 90) return false;
+	return /^(CONHECIMENTOS|L[IÍ]NGUA|MATEM[AÁ]TICA|ATUALIDADES|VENDAS|RASCUNHO|NO[CÇ][OÕ]ES|COMPORTAMENTOS|ATENDIMENTO|PROVA\b)/i.test(
+		t,
+	);
+}
+
+function refineSupport(between: string): string {
+	let t = between.replace(/\r\n/g, "\n").trim();
+	t = t.replace(/^[\s\S]*?\bLEIA ATENTAMENTE[\s\S]*?(?=\n[A-Za-zÀ-ú"“]|\n\d)/i, "");
+	const lines = t.split("\n");
+	let start = 0;
+	for (let i = 0; i < lines.length; i++) {
+		if (isSectionHeader(lines[i])) {
+			start = i + 1;
+		}
+	}
+	const body = lines.slice(start);
+	let bodyStart = 0;
+	while (
+		bodyStart < body.length &&
+		(/^\d{1,3}$/.test(body[bodyStart].trim()) || !body[bodyStart].trim())
+	) {
+		bodyStart += 1;
+	}
+	return body.slice(bodyStart).join("\n").trim();
+}
+
 function looksLikeSupportBlock(text: string): boolean {
 	const t = text.trim();
-	if (t.length < 80) return false;
+	if (t.length < 80 || t.length > 25000) return false;
+	if (/LEIA ATENTAMENTE/i.test(t)) return false;
 	if (/^\d{1,3}\n/.test(t)) return false;
 	if (/^\(A\)/.test(t)) return false;
-	return true;
+	return /[a-zà-ú]{4,}/i.test(t);
+}
+
+function alternativesFootprint(q: ParsedQuestion): number {
+	return q.alternativas.reduce((sum, alt) => sum + alt.texto.length, 0);
+}
+
+function shouldReplace(prev: ParsedQuestion, next: ParsedQuestion): boolean {
+	const prevFoot = alternativesFootprint(prev);
+	const nextFoot = alternativesFootprint(next);
+	if (nextFoot < prevFoot - 40) return true;
+	if (prevFoot < nextFoot - 40) return false;
+	return next.enunciado.length >= prev.enunciado.length;
+}
+
+function endOfAlternatives(altSection: string): number | null {
+	const matches = Array.from(
+		altSection.matchAll(
+			/\(([A-E])\)\s*([\s\S]*?)(?=\([A-E]\)|\n\d{1,3}\n|\n(?:L[IÍ]NGUA|MATEM[AÁ]TICA|CONHECIMENTOS|RASCUNHO|NO[CÇ][OÕ]ES|COMPORTAMENTOS|ATENDIMENTO)\b|$)/gi,
+		),
+	);
+	if (matches.length < 5) return null;
+	const fifth = matches[4];
+	if (fifth.index === undefined) return null;
+	return fifth.index + fifth[0].length;
 }
 
 /**
@@ -43,9 +97,17 @@ export function parseCesgranrioRaw(
 		const start = match.index;
 		if (start === undefined) continue;
 
+		if (start < cursor) {
+			continue;
+		}
+
 		const between = clean.slice(cursor, start).trim();
-		if (looksLikeSupportBlock(between)) {
-			lastSupport = formatEnunciado(between);
+		if (between.split("\n").some((line) => isSectionHeader(line))) {
+			lastSupport = "";
+		}
+		const refined = refineSupport(between);
+		if (looksLikeSupportBlock(refined)) {
+			lastSupport = formatEnunciado(refined);
 		}
 
 		const numero = Number.parseInt(match[1], 10);
@@ -58,20 +120,20 @@ export function parseCesgranrioRaw(
 			i + 1 < matches.length ? matches[i + 1].index : clean.length;
 		if (nextStart === undefined) continue;
 
-		let block = clean.slice(start, nextStart).trim();
-		block = applyNoise(block, config);
-
-		const semNumero = block.replace(/^\d{1,3}\n/, "");
+		const window = clean.slice(start, nextStart);
+		const semNumero = window.replace(/^\d{1,3}\n/, "");
 		const inicioAlt = semNumero.search(/\(A\)/);
 		if (inicioAlt < 0) {
-			cursor = nextStart;
+			cursor = start + match[0].length;
 			continue;
 		}
 
+		const altSection = semNumero.slice(inicioAlt);
+		const altEnd = endOfAlternatives(altSection);
+		const alternativas = parseAlternativas(altSection);
 		let enunciado = formatEnunciado(semNumero.slice(0, inicioAlt));
-		const alternativas = parseAlternativas(semNumero.slice(inicioAlt));
-		if (!enunciado || !alternativas) {
-			cursor = nextStart;
+		if (!enunciado || !alternativas || altEnd === null) {
+			cursor = start + match[0].length;
 			continue;
 		}
 
@@ -82,12 +144,16 @@ export function parseCesgranrioRaw(
 			enunciado = `${lastSupport}\n\n${enunciado}`;
 		}
 
+		const candidate: ParsedQuestion = { enunciado, alternativas };
 		const prev = byNumero.get(numero);
-		if (!prev || enunciado.length >= prev.enunciado.length) {
-			byNumero.set(numero, { enunciado, alternativas });
+		if (!prev || shouldReplace(prev, candidate)) {
+			byNumero.set(numero, candidate);
 		}
 
-		cursor = nextStart;
+		// Avança só até o fim das alternativas, para o texto seguinte
+		// (apoio da próxima seção) virar `between` da próxima questão.
+		const numberPrefixLen = window.length - semNumero.length;
+		cursor = start + numberPrefixLen + inicioAlt + altEnd;
 	}
 
 	return byNumero;

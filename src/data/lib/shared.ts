@@ -137,7 +137,9 @@ export function cleanAlternativeText(texto: string): string {
 
 export function parseAlternativas(bloco: string): QuestionOption[] | null {
 	const matches = Array.from(
-		bloco.matchAll(/\(([A-E])\)\s*([\s\S]*?)(?=\([A-E]\)|$)/g),
+		bloco.matchAll(
+			/\(([A-E])\)\s*([\s\S]*?)(?=\([A-E]\)|\n\d{1,3}\n|\n(?:L[IÍ]NGUA|MATEM[AÁ]TICA|CONHECIMENTOS|RASCUNHO|NO[CÇ][OÕ]ES|COMPORTAMENTOS|ATENDIMENTO)\b|$)/gi,
+		),
 	);
 	if (matches.length < 5) return null;
 
