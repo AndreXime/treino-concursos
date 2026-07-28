@@ -75,15 +75,16 @@ export function parseCebraspeGabarito(text: string): Record<number, string> {
 		if (!nums.every((n) => /^\d{1,3}$/.test(n))) {
 			continue;
 		}
-		if (!answers.every((a) => /^[CEX]$/i.test(a))) {
+		if (!answers.every((a) => /^[CEX0]$/i.test(a))) {
 			continue;
 		}
 		for (let j = 0; j < nums.length; j++) {
 			const n = Number.parseInt(nums[j], 10);
-			if (n === 0) {
+			const answer = answers[j];
+			if (n === 0 || answer === "0") {
 				continue;
 			}
-			gabarito[n] = answers[j].toLowerCase();
+			gabarito[n] = answer.toLowerCase();
 		}
 	}
 

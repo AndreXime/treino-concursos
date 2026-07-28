@@ -67,11 +67,12 @@ C
 	});
 
 	it("parses tab-separated number/answer rows", () => {
-		const text = `1 \t2 \t3 \t49 \t50
-E \tC \tE \tX \tC`;
+		const text = `1 \t2 \t3 \t49 \t50 \t0
+E \tC \tE \tX \tC \t0`;
 		const g = parseCebraspeGabarito(text);
 		assert.equal(g[1], "e");
 		assert.equal(g[49], "x");
 		assert.equal(g[50], "c");
+		assert.equal(g[0], undefined);
 	});
 });
