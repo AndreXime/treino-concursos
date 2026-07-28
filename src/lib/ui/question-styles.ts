@@ -38,7 +38,12 @@ export function alternativeOptionClass(options: {
 	return "border-border bg-background hover:border-accent/50 hover:bg-accent-soft/40";
 }
 
-export function feedbackPanelClass(correct: boolean): string {
+export function feedbackPanelClass(
+	correct: boolean | "anulada",
+): string {
+	if (correct === "anulada") {
+		return "border-border bg-background";
+	}
 	return correct
 		? "border-success/40 bg-success-soft"
 		: "border-danger/40 bg-danger-soft";

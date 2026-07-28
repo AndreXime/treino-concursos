@@ -5,6 +5,7 @@ import {
 	isAnswerCorrect,
 	registerQuestionAttempt,
 } from "@/lib/questions/answer";
+import { isQuestionAnulada } from "@/lib/questions/question-tipo";
 import type { Prova, Question } from "@/lib/questions/types";
 
 export function useQuestionResolver(
@@ -14,6 +15,7 @@ export function useQuestionResolver(
 ) {
 	const [selectedId, setSelectedId] = useState<string | null>(null);
 	const [revealed, setRevealed] = useState(false);
+	const isAnulada = isQuestionAnulada(question);
 
 	const isCorrect =
 		selectedId !== null && isAnswerCorrect(question, selectedId);
@@ -22,7 +24,15 @@ export function useQuestionResolver(
 		if (!selectedId || revealed) {
 			return;
 		}
+		if (isAnulada) {
+			setRevealed(true);
+			return;
+		}
 		const correct = registerQuestionAttempt(prova, question, selectedId);
+		if (correct === null) {
+			setRevealed(true);
+			return;
+		}
 		setRevealed(true);
 		onAnswered(correct);
 	}
@@ -37,6 +47,7 @@ export function useQuestionResolver(
 		setSelectedId,
 		revealed,
 		isCorrect,
+		isAnulada,
 		conferir,
 		resetar,
 	};

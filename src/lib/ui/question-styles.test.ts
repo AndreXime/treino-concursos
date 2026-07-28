@@ -1,6 +1,14 @@
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { questionNavCellClass } from "./question-styles";
+import { feedbackPanelClass, questionNavCellClass } from "./question-styles";
+
+describe("feedbackPanelClass", () => {
+	it("uses neutral styles for anulada", () => {
+		const cls = feedbackPanelClass("anulada");
+		assert.match(cls, /border-border/);
+		assert.doesNotMatch(cls, /success|danger/);
+	});
+});
 
 describe("questionNavCellClass", () => {
 	it("wrong differs from pending", () => {

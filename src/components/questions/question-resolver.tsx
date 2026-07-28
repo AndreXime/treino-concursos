@@ -32,8 +32,15 @@ export function QuestionResolver({
 	onNext,
 	onPrevious,
 }: QuestionResolverProps) {
-	const { selectedId, setSelectedId, revealed, isCorrect, conferir, resetar } =
-		useQuestionResolver(prova, question, onAnswered);
+	const {
+		selectedId,
+		setSelectedId,
+		revealed,
+		isCorrect,
+		isAnulada,
+		conferir,
+		resetar,
+	} = useQuestionResolver(prova, question, onAnswered);
 
 	useEffect(() => {
 		function onKeyDown(event: KeyboardEvent) {
@@ -109,7 +116,8 @@ export function QuestionResolver({
 							{
 								selected: selectedId === option.id,
 								revealed,
-								isGabarito: option.id === question.gabaritoId,
+								isGabarito:
+									!isAnulada && option.id === question.gabaritoId,
 							},
 						)} ${revealed ? "cursor-default" : ""}`}
 					>
@@ -176,18 +184,32 @@ export function QuestionResolver({
 
 			{revealed ? (
 				<div
-					className={`mt-8 rounded-xl border px-4 py-4 ${feedbackPanelClass(isCorrect)}`}
+					className={`mt-8 rounded-xl border px-4 py-4 ${feedbackPanelClass(
+						isAnulada ? "anulada" : isCorrect,
+					)}`}
 					role="status"
 				>
-					<p className="font-semibold">
-						{isCorrect ? "Resposta correta" : "Resposta incorreta"}
-					</p>
-					<p className="mt-1 text-sm text-foreground/90">
-						Sua resposta: <strong className="uppercase">{selectedId}</strong>
-						{" · "}
-						Gabarito:{" "}
-						<strong className="uppercase">{question.gabaritoId}</strong>
-					</p>
+					{isAnulada ? (
+						<>
+							<p className="font-semibold">Item anulado</p>
+							<p className="mt-1 text-sm text-foreground/90">
+								Este item foi anulado no gabarito oficial e não pontua.
+							</p>
+						</>
+					) : (
+						<>
+							<p className="font-semibold">
+								{isCorrect ? "Resposta correta" : "Resposta incorreta"}
+							</p>
+							<p className="mt-1 text-sm text-foreground/90">
+								Sua resposta:{" "}
+								<strong className="uppercase">{selectedId}</strong>
+								{" · "}
+								Gabarito:{" "}
+								<strong className="uppercase">{question.gabaritoId}</strong>
+							</p>
+						</>
+					)}
 				</div>
 			) : null}
 		</article>
