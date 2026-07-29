@@ -75,6 +75,19 @@ export function findNextQuestion(
 	return questions[currentIndex + 1] ?? null;
 }
 
+export function findPreviousQuestion(
+	questions: Question[],
+	currentId: string,
+): Question | null {
+	const currentIndex = questions.findIndex(
+		(question) => question.id === currentId,
+	);
+	if (currentIndex <= 0) {
+		return null;
+	}
+	return questions[currentIndex - 1] ?? null;
+}
+
 export function withAddedId(ids: Set<string>, id: string): Set<string> {
 	const next = new Set(ids);
 	next.add(id);

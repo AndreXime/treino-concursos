@@ -30,7 +30,7 @@ export function HistoryList() {
 					Resolva questões de uma prova para ver seu histórico local aqui.
 				</p>
 				<Link
-					href="/"
+					href="/provas"
 					className="mt-5 inline-flex rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent-strong"
 				>
 					Ver provas

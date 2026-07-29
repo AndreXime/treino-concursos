@@ -4,27 +4,17 @@
 import fs from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { PDFParse } from "pdf-parse";
 import type { QuestionOption } from "@/lib/questions/types";
+import {
+	DISCIPLINAS_BB_AC,
+	disciplinaDoNumero as disciplinaFromRanges,
+} from "./concursos";
+
+export { DISCIPLINAS_BB_AC };
 
 export const ALT_IDS = ["a", "b", "c", "d", "e"] as const;
 
 export type AltId = (typeof ALT_IDS)[number];
-
-export const DISCIPLINAS_BB_AC: Array<{
-	nome: string;
-	de: number;
-	ate: number;
-}> = [
-	{ nome: "Língua Portuguesa", de: 1, ate: 10 },
-	{ nome: "Língua Inglesa", de: 11, ate: 15 },
-	{ nome: "Matemática", de: 16, ate: 20 },
-	{ nome: "Atualidades do Mercado Financeiro", de: 21, ate: 25 },
-	{ nome: "Matemática Financeira", de: 26, ate: 30 },
-	{ nome: "Conhecimentos Bancários", de: 31, ate: 40 },
-	{ nome: "Conhecimentos de Informática", de: 41, ate: 55 },
-	{ nome: "Vendas e Negociação", de: 56, ate: 70 },
-];
 
 const LIB_ROOT = dirname(fileURLToPath(import.meta.url));
 export const DATA_ROOT = join(LIB_ROOT, "..");
@@ -32,7 +22,7 @@ export const RAW_DIR = join(DATA_ROOT, "raw");
 export const ARTEFACTS_DIR = join(LIB_ROOT, "artefacts");
 
 export function disciplinaDoNumero(n: number): string {
-	return DISCIPLINAS_BB_AC.find((d) => n >= d.de && n <= d.ate)?.nome ?? "";
+	return disciplinaFromRanges(DISCIPLINAS_BB_AC, n);
 }
 
 export function joinBrokenHyphens(text: string): string {
@@ -147,7 +137,9 @@ export function cleanAlternativeText(texto: string): string {
 
 export function parseAlternativas(bloco: string): QuestionOption[] | null {
 	const matches = Array.from(
-		bloco.matchAll(/\(([A-E])\)\s*([\s\S]*?)(?=\([A-E]\)|$)/g),
+		bloco.matchAll(
+			/\(([A-E])\)\s*([\s\S]*?)(?=\([A-E]\)|\n\d{1,3}\n|\n(?:L[IÍ]NGUA|MATEM[AÁ]TICA|CONHECIMENTOS|RASCUNHO|NO[CÇ][OÕ]ES|COMPORTAMENTOS|ATENDIMENTO)\b|$)/gi,
+		),
 	);
 	if (matches.length < 5) return null;
 
@@ -218,29 +210,8 @@ export async function parseGabaritoPdf(
 	pdfPath: string,
 	gabaritoNumero: number,
 ): Promise<Record<number, string>> {
-	const buf = fs.readFileSync(pdfPath);
-	const parser = new PDFParse({ data: buf });
-	try {
-		const result = await parser.getText({ pageJoiner: "" });
-		const text = result.text.replace(/\r\n/g, "\n");
-		const marker = `GABARITO ${gabaritoNumero}`;
-		const start = text.indexOf(marker);
-		if (start < 0) {
-			throw new Error(`Bloco ${marker} não encontrado em ${pdfPath}`);
-		}
-		const next = text.indexOf("GABARITO ", start + marker.length);
-		const block = next >= 0 ? text.slice(start, next) : text.slice(start);
-
-		const gabarito: Record<number, string> = {};
-		for (const match of block.matchAll(
-			/(?<!\d)(\d{1,2})\s*-\s*([A-E])\b/gi,
-		)) {
-			gabarito[Number.parseInt(match[1], 10)] = match[2].toLowerCase();
-		}
-		return gabarito;
-	} finally {
-		await parser.destroy();
-	}
+	const { loadGabaritoFromPdf } = await import("./gabarito");
+	return loadGabaritoFromPdf(pdfPath, "cesgranrio", { gabaritoNumero });
 }
 
 export function findGabaritoPdf(provaLetter: string): string {

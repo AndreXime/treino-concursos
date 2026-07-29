@@ -1,22 +1,35 @@
-# Pipeline de provas (Cesgranrio BB Agente Comercial)
+# Pipeline de provas
 
 ## Layout
 
 - `src/data/raw/` — PDFs fonte (provas + gabaritos)
 - `src/data/*.json` — JSON consumido pela app
 - `src/data/lib/artefacts/` — intermediários (`raw.txt`, imagens); gitignored
+- `src/data/lib/concursos/` — configs por slug
+
+## Slugs
+
+| Slug | Concurso |
+|------|----------|
+| `bb-ac-a` / `bb-ac-b` / `bb-ac-c` | BB Agente Comercial A/B/C |
+| `caixa-2024` | Caixa Técnico Bancário Novo |
+| `cnu-2024-b8` | CNU 2024 Bloco 8 intermediário |
+| `inss-2022` | INSS Técnico do Seguro Social |
 
 ## Comandos
 
 ```bash
-# Extrai texto + imagens de um ou mais PDFs de prova
-npx tsx src/data/lib/extract-pdf.mts B C
+# Extrai texto + imagens
+npx tsx src/data/lib/extract-pdf.mts caixa-2024
 
-# Valida JSON contra gabarito oficial do PDF
-npx tsx src/data/lib/validate-prova.mts "src/data/PROVA B - AGENTE COMERCIAL - GABARITO 1.json" B 1
+# Gera JSON a partir do raw + gabarito
+npx tsx src/data/lib/build-prova.mts caixa-2024
 
-# Corrige gabarito/vazamentos óbvios a partir do PDF de gabarito
-npx tsx src/data/lib/fix-prova.mts "src/data/PROVA B - AGENTE COMERCIAL - GABARITO 1.json" B 1
+# Valida JSON contra config + gabarito oficial
+npx tsx src/data/lib/validate-prova.mts caixa-2024
+
+# Corrige gabarito/vazamentos óbvios
+npx tsx src/data/lib/fix-prova.mts caixa-2024
 ```
 
-A revisão editorial (textos de apoio, tabelas, figuras) continua manual sobre o `artefacts/PROVA-X/raw.txt`.
+A revisão editorial (textos de apoio, tabelas, figuras) continua manual sobre o `artefacts/<slug>/raw.txt`.

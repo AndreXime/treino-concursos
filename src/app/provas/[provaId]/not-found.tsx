@@ -10,7 +10,7 @@ export default function ProvaNotFound() {
 				O identificador informado não corresponde a nenhuma prova cadastrada.
 			</p>
 			<Link
-				href="/"
+				href="/provas"
 				className="mt-5 inline-flex rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent-strong"
 			>
 				Ver provas

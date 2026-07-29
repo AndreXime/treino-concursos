@@ -17,11 +17,11 @@ const body = Source_Sans_3({
 
 export const metadata: Metadata = {
 	title: {
-		default: "LibreConcursos",
-		template: "%s · LibreConcursos",
+		default: "Treino Concursos",
+		template: "%s · Treino Concursos",
 	},
 	description:
-		"Portal livre de questões de concursos: filtre, resolva e acompanhe seu histórico.",
+		"Treine questões de concursos por prova: filtre, resolva e acompanhe seu histórico.",
 };
 
 export default function RootLayout({
@@ -39,9 +39,6 @@ export default function RootLayout({
 				<main className="container mx-auto flex-1 px-4 py-8 sm:px-6 sm:py-10">
 					{children}
 				</main>
-				<footer className="border-t border-border/70 py-6 text-center text-xs text-muted">
-					LibreConcursos · BB Agente Comercial 2022 (Cesgranrio)
-				</footer>
 			</body>
 		</html>
 	);

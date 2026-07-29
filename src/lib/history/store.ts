@@ -9,7 +9,7 @@ export interface Attempt {
 	provaTitulo: string;
 }
 
-const STORAGE_KEY = "libre-concursos:attempts-v2";
+const STORAGE_KEY = "treino-concursos:attempts-v2";
 
 function canUseStorage(): boolean {
 	return (
