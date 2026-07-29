@@ -1,0 +1,2291 @@
+{
+  "id": "inss-2022-tss",
+  "titulo": "INSS – Técnico do Seguro Social (2022)",
+  "orgao": "Instituto Nacional do Seguro Social",
+  "cargo": "Técnico do Seguro Social",
+  "banca": "CEBRASPE",
+  "ano": 2022,
+  "edital": "Edital 2022",
+  "questoes": [
+    {
+      "id": "inss-2022-tss-q01",
+      "provaId": "inss-2022-tss",
+      "numero": 1,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n1 O envelhecimento da população mundial é um dos fatores que explicam a ampliação da presença de mulheres no mercado de trabalho.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Língua Portuguesa",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q02",
+      "provaId": "inss-2022-tss",
+      "numero": 2,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n2 Os serviços de cuidados fornecidos na América Latina diferenciam-se dos providos em países do hemisfério norte.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Língua Portuguesa",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q03",
+      "provaId": "inss-2022-tss",
+      "numero": 3,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n3 Por mencionar dados, articular depoimentos e expor\nargumentos, o texto configura-se como predominantemente descritivo.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Língua Portuguesa",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q04",
+      "provaId": "inss-2022-tss",
+      "numero": 4,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n4 A profissionalização do trabalho de cuidados nos últimos anos remodelou a essência do conceito de cuidado.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Língua Portuguesa",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q05",
+      "provaId": "inss-2022-tss",
+      "numero": 5,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n5 Ao confirmarem a forte dimensão emocional do trabalho de cuidados, os estudos relatados no texto recomendam que esse setor da economia não seja assumido pelo Estado nem seja objeto de mercantilização. Acerca de aspectos semânticos e sintáticos do texto CB1A1, julgue os itens que se seguem.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Língua Portuguesa",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q06",
+      "provaId": "inss-2022-tss",
+      "numero": 6,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n6 No último parágrafo, a expressão “nas quais” poderia, sem prejuízo sintático para o texto, ser substituída por cujas.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Língua Portuguesa",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q07",
+      "provaId": "inss-2022-tss",
+      "numero": 7,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n7 No terceiro parágrafo, o segmento “a ideia” (segundo período) retoma, por coesão, a “noção” descrita no primeiro período.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Língua Portuguesa",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q08",
+      "provaId": "inss-2022-tss",
+      "numero": 8,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n8 Seria preservada a coerência das ideias do texto se, no segundo parágrafo, a expressão “na medida em que” fosse substituída pelo vocábulo pois. Julgue os itens a seguir, relativos a aspectos estruturais e gramaticais do texto CB1A1.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Língua Portuguesa",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q09",
+      "provaId": "inss-2022-tss",
+      "numero": 9,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n9 O emprego das vírgulas após os trechos “De acordo com o último relatório da Organização Internacional do Trabalho (OIT)” (no segundo período do primeiro parágrafo) e “Conforme definição da OIT” (no início do segundo parágrafo) justifica-se pelo mesmo motivo.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Língua Portuguesa",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q10",
+      "provaId": "inss-2022-tss",
+      "numero": 10,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n10 No início do último parágrafo, o emprego da conjunção “entretanto” objetiva evidenciar uma contraposição com o que se afirma no parágrafo anterior; por isso, essa conjunção poderia ser substituída, sem prejuízo dos sentidos e da coerência do texto, por conquanto.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Língua Portuguesa",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q11",
+      "provaId": "inss-2022-tss",
+      "numero": 11,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n11 Por constituir um substantivo, o termo ‘bem-estar’,\nempregado no segundo parágrafo, poderia ser grafado, em conformidade com a ortografia oficial, sem o hífen: bem estar.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Língua Portuguesa",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q12",
+      "provaId": "inss-2022-tss",
+      "numero": 12,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n12 No terceiro período do segundo parágrafo, o termo “sua” refere-se à expressão “conceito de cuidado”.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Língua Portuguesa",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q13",
+      "provaId": "inss-2022-tss",
+      "numero": 13,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n13 No início do quarto parágrafo, a expressão “Por outro lado” desempenha papel de reforço da coesão textual e poderia ser substituída, sem prejuízo semântico ao texto original, por Inversamente.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Língua Portuguesa",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q14",
+      "provaId": "inss-2022-tss",
+      "numero": 14,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n14 Seria mantida a correção gramatical do texto caso o termo ‘analisado’ (quarto parágrafo) fosse flexionado no feminino — analisada —, dada a possibilidade de sua concordância com o termo subsequente ‘crise’, com o qual estabelece relação sintático-semântica. Com base no Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal (CEPSPC), julgue os itens que se seguem.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Língua Portuguesa",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q15",
+      "provaId": "inss-2022-tss",
+      "numero": 15,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n15 Situação hipotética: Carlos, servidor público federal, com o objetivo de realizar uma doação a uma instituição de caridade que se encontrava em péssima situação financeira, pleiteou auxílio financeiro do representante de uma empresa multinacional como condição para cumprir sua missão. Ao ser atendido em seu pleito pela empresa, Carlos prontamente concretizou a doação no valor integral que havia recebido. Assertiva: Nessa situação, tendo em vista que Carlos não reteve para si qualquer quantia da doação recebida, sua atitude encontra respaldo no CEPSPC.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Ética no Serviço Público",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q16",
+      "provaId": "inss-2022-tss",
+      "numero": 16,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n16 O servidor público não poderá, em hipótese alguma,\ndesprezar o elemento ético da sua conduta. Assim, ele não terá apenas que decidir entre o legal e o ilegal, o conveniente e o inconveniente, mas principalmente entre o honesto e o desonesto, à luz das regras constitucionais.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Ética no Serviço Público",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q17",
+      "provaId": "inss-2022-tss",
+      "numero": 17,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n17 Situação hipotética: Bruno, servidor público federal, todos os dias, após o término do seu expediente, dirige-se a um bar muito frequentado da cidade em que reside para ingerir bebida alcóolica. Nessas ocasiões, habitualmente, Bruno é visto embriagado pelos demais frequentadores do bar. Por volta das 22 h, ele costuma ir para sua casa, de forma que\nesse comportamento não afeta o seu desempenho\nprofissional. Assertiva: Nessa situação, a embriaguez\nhabitual de Bruno fora do ambiente de trabalho não fere o CEPSPC, uma vez que se trata de conduta do dia a dia de sua vida privada, que não pode afetar o seu bom conceito na vida profissional. Julgue os itens subsequentes, a respeito do Sistema de Gestão da Ética do Poder Executivo Federal.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Ética no Serviço Público",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q18",
+      "provaId": "inss-2022-tss",
+      "numero": 18,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n18 A Comissão de Ética Pública é integrada por brasileiros que preencham os requisitos de idoneidade moral, reputação ilibada e notória experiência em administração pública, designados para mandatos de dois anos, sendo vedada a recondução.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Ética no Serviço Público",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q19",
+      "provaId": "inss-2022-tss",
+      "numero": 19,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n19 No âmbito das comissões de ética, caso se conclua pela existência de falta ética após a instrução processual, poderá ser adotada, entre outras, a providência de recomendação de abertura de procedimento administrativo, se a gravidade da conduta assim o exigir.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Ética no Serviço Público",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q20",
+      "provaId": "inss-2022-tss",
+      "numero": 20,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n20 A atuação da Comissão de Ética Pública poderá ser provocada por qualquer cidadão, agente público, pessoa jurídica de direito privado, associação ou entidade de classe, visando a apuração de infração ética imputada a agente público, órgão ou setor específico de ente estatal. No que diz respeito a direitos e garantias fundamentais, julgue os itens a seguir.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Ética no Serviço Público",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q21",
+      "provaId": "inss-2022-tss",
+      "numero": 21,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n21 A casa é asilo inviolável do indivíduo e nela ninguém poderá ingressar sem o consentimento do morador, salvo se houver determinação judicial para o ingresso.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Ética no Serviço Público",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q22",
+      "provaId": "inss-2022-tss",
+      "numero": 22,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n22 O direito de reunião está assegurado a todos, desde que observados os seguintes requisitos constitucionais: caráter pacífico; localização aberta ao público; prévia autorização da autoridade competente; e não frustação de outra reunião anteriormente convocada para o mesmo local.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Direitos e Garantias Fundamentais",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q23",
+      "provaId": "inss-2022-tss",
+      "numero": 23,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n23 São equivalentes às emendas constitucionais os tratados internacionais sobre direitos humanos aprovados na Câmara dos Deputados e no Senado Federal, em dois turnos, por três quintos dos votos dos membros de cada uma dessas casas.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Direitos e Garantias Fundamentais",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q24",
+      "provaId": "inss-2022-tss",
+      "numero": 24,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n24 O indivíduo que tomar posse em determinado cargo efetivo de uma autarquia federal será obrigado a filiar-se ao sindicato de sua categoria profissional, pois a esse sindicato cabe a defesa dos direitos e interesses coletivos ou individuais da categoria, inclusive em questões judiciais ou administrativas.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Direitos e Garantias Fundamentais",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q25",
+      "provaId": "inss-2022-tss",
+      "numero": 25,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n25 A cassação dos direitos políticos é possível nos casos de cancelamento da naturalização por sentença transitada em julgado; incapacidade civil absoluta; condenação criminal transitada em julgado, enquanto durarem seus efeitos; recusa\nde cumprir obrigação a todos imposta ou prestação\nalternativa; e improbidade administrativa.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Direitos e Garantias Fundamentais",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q26",
+      "provaId": "inss-2022-tss",
+      "numero": 26,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n26 Brasileiros naturalizados podem ser eleitos membros da Câmara dos Deputados e do Senado Federal, caso cumpram as demais condições de elegibilidade, porque tais cargos não são privativos de brasileiros natos. Julgue os itens seguintes, relativos à administração pública.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Direitos e Garantias Fundamentais",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q27",
+      "provaId": "inss-2022-tss",
+      "numero": 27,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n27 Em regra, é vedada a acumulação remunerada de cargos públicos. Essa vedação estende-se a empregos e funções e abrange\nautarquias, fundações, empresas públicas, sociedades de\neconomia mista, suas subsidiárias, e sociedades controladas, direta ou indiretamente, pelo poder público.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Administração Pública",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q28",
+      "provaId": "inss-2022-tss",
+      "numero": 28,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n28 Somente por lei específica poderá ser criada autarquia e autorizada a instituição de empresa pública, sociedade de economia mista e fundação pública, cabendo, em todos os casos, lei complementar para definir as áreas de atuação dessas entidades.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Administração Pública",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q29",
+      "provaId": "inss-2022-tss",
+      "numero": 29,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n29 O servidor público estável perderá o seu cargo de\nprovimento efetivo em virtude de: sentença judicial\ntransitada em julgado, processo administrativo em que lhe seja assegurada ampla defesa ou procedimento de avaliação periódica de desempenho, na forma de lei complementar, assegurada ampla defesa.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Administração Pública",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q30",
+      "provaId": "inss-2022-tss",
+      "numero": 30,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n30 Situação hipotética: Uma servidora pública do INSS, ocupante de cargo efetivo de técnico do seguro social, foi eleita deputada federal nas eleições de 2022. Assertiva: Nessa situação, a servidora ficará afastada de seu cargo efetivo no INSS para o exercício de mandato eletivo na Câmara dos Deputados, sendo esse tempo de serviço contado para todos os efeitos legais, exceto para promoção por merecimento. No que diz respeito à administração pública, às fontes do direito administrativo, à organização administrativa da União, à Lei n.º 8.112/1990 e aos poderes administrativos, julgue os itens que se seguem.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Administração Pública",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q31",
+      "provaId": "inss-2022-tss",
+      "numero": 31,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n31 Em sentido subjetivo, formal ou orgânico, a administração pública consiste no conjunto de órgãos, entidades e agentes estatais no exercício da função administrativa do Estado. Já a administração pública em sentido objetivo, material ou funcional designa o conjunto de atividades administrativas exercidas pelo Estado para a consecução dos interesses coletivos.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Administração Pública",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q32",
+      "provaId": "inss-2022-tss",
+      "numero": 32,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n32 O abuso de poder é tratado pela doutrina majoritária como gênero cujas espécies são: o excesso de poder, que ocorre quando o agente público atua nos limites de sua competência legalmente definida, mas visando a um fim diverso da consecução do interesse público; e o desvio de poder, que se dá quando o agente público exorbita da competência que lhe foi legalmente atribuída.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Administração Pública",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q33",
+      "provaId": "inss-2022-tss",
+      "numero": 33,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n33 A lei é considerada a fonte primordial do direito\nadministrativo brasileiro, razão por que esse ramo do direito público nacional se encontra codificado, ou seja, as normas administrativas estão reunidas em um só corpo de leis.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Administração Pública",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q34",
+      "provaId": "inss-2022-tss",
+      "numero": 34,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n34 O INSS é uma autarquia federal subordinada ao Ministério do Trabalho e Previdência.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Administração Pública",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q35",
+      "provaId": "inss-2022-tss",
+      "numero": 35,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n35 De acordo com a Lei n.º 8.112/1990, são formas de\nprovimento de cargo público: nomeação, promoção,\nascensão, transferência, readaptação, reversão,\naproveitamento, reintegração e recondução. Julgue os próximos itens, referentes ao ato administrativo, aos serviços públicos, à responsabilidade civil do Estado e às Leis n.º 8.429/1992 e n.º 9.784/1999.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Administração Pública",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q36",
+      "provaId": "inss-2022-tss",
+      "numero": 36,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n36 A administração pode revogar seus próprios atos, quando eivados de vícios que os tornem ilegais, porque deles não se originam direitos, podendo, ainda, anulá-los por motivo de\nconveniência ou oportunidade, respeitados os direitos\nadquiridos.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Direito Administrativo",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q37",
+      "provaId": "inss-2022-tss",
+      "numero": 37,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n37 A concessão de serviço público consiste na delegação de sua prestação, feita pelo poder concedente, por meio de licitação, na modalidade concorrência ou diálogo competitivo, a pessoa jurídica ou a consórcio de empresas que demonstre capacidade para o seu desempenho, por sua conta e risco e por prazo determinado.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Direito Administrativo",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q38",
+      "provaId": "inss-2022-tss",
+      "numero": 38,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n38 Será impedido de atuar em processo administrativo o servidor público que tiver interesse direto ou indireto na matéria. Além disso, poderá ser arguida a suspeição de autoridade que tenha amizade íntima ou inimizade notória com algum dos interessados nesse processo.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Direito Administrativo",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q39",
+      "provaId": "inss-2022-tss",
+      "numero": 39,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n39 Com base na teoria do risco administrativo, admite-se pesquisa em torno da culpa da vítima, a fim de abrandar ou excluir a responsabilidade civil objetiva das pessoas jurídicas de direito público e das pessoas jurídicas de direito privado prestadoras de serviço público.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Direito Administrativo",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q40",
+      "provaId": "inss-2022-tss",
+      "numero": 40,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n40 Ainda que não seja agente público, aquele que induzir ou concorrer culposa ou dolosamente para a prática de ato de improbidade administrativa sujeitar-se-á, no que couber, às disposições da Lei n.º 8.429/1992. Tendo como base a figura anterior, julgue os seguintes itens.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Direito Administrativo",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q41",
+      "provaId": "inss-2022-tss",
+      "numero": 41,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n41 Os cookies, mencionados no texto da figura apresentada, podem salvar configurações dos usuários em um arquivo armazenado nos computadores desses usuários.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Noções de Informática",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q42",
+      "provaId": "inss-2022-tss",
+      "numero": 42,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n42 De acordo com o trecho destacado na barra de endereço mostrada na figura em apreço (cadeado seguido do trecho https://), é correto afirmar que a página em questão é parte da intranet do INSS, acessível somente por meio de senha, conforme indica o símbolo do cadeado à esquerda do endereço. Na planilha mostrada na figura ao lado, que representa um conjunto de células no MS Excel\n365, foi realizada a seguinte\nsequência de ações: • todas as células mostradas foram selecionadas; • foi selecionada a opção Remover Duplicadas; • foram selecionadas todas as colunas na caixa de diálogo Remover Duplicadas e, em seguida, clicou-se no botão OK. Nessa situação hipotética,",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Noções de Informática",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q43",
+      "provaId": "inss-2022-tss",
+      "numero": 43,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n43 nenhuma linha da planilha foi apagada. Julgue os próximos itens, acerca de Windows 10 e segurança da informação.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Noções de Informática",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q44",
+      "provaId": "inss-2022-tss",
+      "numero": 44,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n44 Phishing é um tipo de invasão mediante o uso de software malicioso que torna inacessíveis os dados armazenados no equipamento invadido, geralmente usando criptografia, no qual o agente invasor exige o pagamento de resgate para restabelecer o acesso do usuário aos dados afetados.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Noções de Informática",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q45",
+      "provaId": "inss-2022-tss",
+      "numero": 45,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n45 O recurso BitLocker, ferramenta de criptografia presente no Windows 10, possibilita que o usuário proteja a privacidade de seus dados. Ao realizar um levantamento de informações solicitado por seu chefe, um técnico do seguro social verificou que, entre os segurados que apresentaram suas demandas ao longo da semana\nanterior, 75% receberam algum atendimento remoto (por\ntelefone, aplicativo ou Internet) e 35% receberam atendimento presencial. Houve casos em que os atendimentos foram iniciados no modo remoto, mas, devido às suas complexidades, precisaram ser concluídos presencialmente. Com base nessa situação hipotética, julgue os itens seguintes.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Noções de Informática",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q46",
+      "provaId": "inss-2022-tss",
+      "numero": 46,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n46 Se 20% dos segurados que buscaram atendimento presencial o fizeram para solicitar a reativação do benefício de\nprestação continuada (BPC), então 10% do total de\nbeneficiários que buscaram atendimento pleiteavam a\nreativação do BPC.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Noções de Informática",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q47",
+      "provaId": "inss-2022-tss",
+      "numero": 47,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n47 Se havia somente as duas modalidades de atendimento\ndescritas, é correto concluir que 10% dos segurados\npassaram pelas duas modalidades de atendimento em suas demandas. P: Nos processos de justificações administrativas, quando o segurado apresentar testemunhas com valor de prova, a agência fornecerá um servidor exclusivo para o atendimento. A partir da proposição precedente, julgue os itens a seguir.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Noções de Informática",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q48",
+      "provaId": "inss-2022-tss",
+      "numero": 48,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n48 A tabela-verdade associada à proposição P possui oito linhas.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Noções de Informática",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q49",
+      "provaId": "inss-2022-tss",
+      "numero": 49,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n49 A proposição “o segurado apresentar testemunhas com ou sem valor de prova” é uma tautologia.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "x",
+      "disciplina": "Noções de Informática",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q50",
+      "provaId": "inss-2022-tss",
+      "numero": 50,
+      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n50 Há apenas uma possibilidade de combinação de valores lógicos para as proposições simples que compõem P que a tornam falsa. Espaço livre",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Noções de Informática",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q51",
+      "provaId": "inss-2022-tss",
+      "numero": 51,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n51 O princípio democrático exige a necessidade de\nenvolvimento de diversos segmentos na administração do sistema de seguridade, de forma que sua gestão deve contar com a participação dos trabalhadores, dos empregadores, dos aposentados e do governo.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q52",
+      "provaId": "inss-2022-tss",
+      "numero": 52,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n52 São garantidas a uniformidade e a equivalência dos\nbenefícios e serviços às populações urbanas e rurais, embora não se objetive a equidade na forma de participação no custeio. Julgue os itens que seguem, a respeito da aplicação das normas previdenciárias.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q53",
+      "provaId": "inss-2022-tss",
+      "numero": 53,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n53 O princípio da territorialidade vige no âmbito do direito previdenciário, razão por que é vedada a aplicação da norma brasileira desse ramo do direito fora do território nacional.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q54",
+      "provaId": "inss-2022-tss",
+      "numero": 54,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n54 No direito previdenciário, a lei nova não surte efeitos pretéritos, salvo se em benefício de infratores de norma de custeio. Com relação ao regime geral de previdência social (RGPS), julgue os itens subsequentes.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "x",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q55",
+      "provaId": "inss-2022-tss",
+      "numero": 55,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n55 Será segurado obrigatório, na qualidade de contribuinte individual, o brasileiro contratado no Brasil para trabalhar como empregado em empresa domiciliada no exterior, cuja maioria do capital votante pertença a empresa brasileira de capital nacional.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q56",
+      "provaId": "inss-2022-tss",
+      "numero": 56,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n56 Situação hipotética: Daniel, pessoa física residente em\nimóvel rural, desenvolve, como produtor e de forma\nindividual, atividade agropecuária em área de três módulos fiscais, com exploração de atividade turística na propriedade rural durante 90 dias por ano. Assertiva: Nessa situação, a exploração da atividade turística na propriedade rural não descaracteriza a condição de segurado especial de Daniel.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q57",
+      "provaId": "inss-2022-tss",
+      "numero": 57,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n57 São segurados facultativos: o ministro de confissão religiosa e o membro de instituto de vida consagrada, de congregação ou de ordem religiosa.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q58",
+      "provaId": "inss-2022-tss",
+      "numero": 58,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n58 Para fins previdenciários, considera-se empresa a firma individual ou sociedade que assume risco de atividade econômica, a ela equiparando-se a cooperativa e a missão diplomática.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q59",
+      "provaId": "inss-2022-tss",
+      "numero": 59,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n59 A filiação de um segurado obrigatório à previdência social se concretiza com o pagamento da primeira contribuição previdenciária desse segurado.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q60",
+      "provaId": "inss-2022-tss",
+      "numero": 60,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n60 É considerado segurado obrigatório o exercente de mandato eletivo federal, estadual ou municipal, desde que não vinculado a regime próprio de previdência social (RPPS). Acerca do conceito previdenciário de empresa e de empregador doméstico e do financiamento da seguridade social, julgue os itens que se seguem.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q61",
+      "provaId": "inss-2022-tss",
+      "numero": 61,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n61 Do ponto de vista previdenciário, considera-se empresa a firma individual ou sociedade que assume o risco de atividade econômica urbana ou rural, com fins lucrativos, excluídos os órgãos e entidades da administração pública direta, indireta ou fundacional.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q62",
+      "provaId": "inss-2022-tss",
+      "numero": 62,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n62 Em razão do princípio da pessoalidade, considera-se\nempregador doméstico exclusivamente a pessoa física ou a família que admite a seu serviço, sem finalidade lucrativa, empregado doméstico.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q63",
+      "provaId": "inss-2022-tss",
+      "numero": 63,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n63 Constituem contribuições sociais, entre outras, as receitas das empresas, incidentes sobre a remuneração paga ou creditada aos segurados a seu serviço.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q64",
+      "provaId": "inss-2022-tss",
+      "numero": 64,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n64 As multas e os juros moratórios constituem outras receitas da seguridade social, nas quais não se inclui a atualização monetária.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q65",
+      "provaId": "inss-2022-tss",
+      "numero": 65,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n65 É obrigação das companhias seguradoras que mantêm o seguro obrigatório de danos pessoais causados por veículos automotores de vias terrestres o repasse à seguridade social de 50% do valor total do prêmio recolhido e destinado ao Sistema Único de Saúde para custeio da assistência médicohospitalar dos segurados vitimados em acidentes de trânsito.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "x",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q66",
+      "provaId": "inss-2022-tss",
+      "numero": 66,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n66 A contribuição empresarial destinada à seguridade social de\nassociação desportiva que mantém equipe de futebol\nprofissional corresponde a 20% da receita bruta decorrente dos espetáculos desportivos de que participe em todo território nacional, em qualquer modalidade desportiva, inclusive jogos internacionais, e de 5% da receita de qualquer forma de patrocínio, licenciamento de uso de\nmarcas e símbolos, publicidade, propaganda e de\ntransmissão de espetáculos desportivos. Julgue os itens subsequentes, relativos ao salário de contribuição.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q67",
+      "provaId": "inss-2022-tss",
+      "numero": 67,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n67 Salário de contribuição é o valor que serve de base de incidência das alíquotas das contribuições previdenciárias dos segurados, à exceção do segurado especial.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q68",
+      "provaId": "inss-2022-tss",
+      "numero": 68,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n68 Para o trabalhador, os valores relativos ao salário de contribuição que forem sonegados não serão computados para fins de cálculo de benefícios como aposentadoria, auxílio-doença, salário-maternidade ou mesmo pensão por morte.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "x",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q69",
+      "provaId": "inss-2022-tss",
+      "numero": 69,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n69 Em regra, o limite mínimo do salário de contribuição corresponde, para os segurados facultativos, ao piso salarial legal ou normativo da categoria.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q70",
+      "provaId": "inss-2022-tss",
+      "numero": 70,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n70 Quando a remuneração do trabalhador avulso, em\ndeterminado mês, não alcançar o salário mínimo, ele poderá complementar a sua contribuição visando o cômputo da competência desse mês como tempo de contribuição.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q71",
+      "provaId": "inss-2022-tss",
+      "numero": 71,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n71 O limite máximo do salário de contribuição será atualizado sempre que ocorrer alteração do valor dos benefícios previdenciários.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q72",
+      "provaId": "inss-2022-tss",
+      "numero": 72,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n72 Respeitados os direitos adquiridos, nenhum benefício\nprevidenciário reajustado poderá exceder o limite máximo do salário de benefício na data do reajustamento. Acerca de aspectos relacionados à arrecadação e ao recolhimento das contribuições destinadas à seguridade social, julgue os itens a seguir.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "x",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q73",
+      "provaId": "inss-2022-tss",
+      "numero": 73,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n73 Cabe ao INSS acompanhar a arrecadação das contribuições sociais e das contribuições instituídas a título de substituição.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q74",
+      "provaId": "inss-2022-tss",
+      "numero": 74,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n74 A multa incidente sobre os débitos de contribuições\nprevidenciárias não pagas nos prazos previstos na legislação específica será calculada diariamente e não poderá extrapolar o percentual de 20%.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "x",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q75",
+      "provaId": "inss-2022-tss",
+      "numero": 75,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n75 Os segurados facultativos devem recolher a contribuição relativa a determinado mês, por iniciativa própria, até o dia",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q76",
+      "provaId": "inss-2022-tss",
+      "numero": 76,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n76 O anistiado político que, durante algum tempo, ficou exilado no exterior em decorrência de ameaça de punição por motivo exclusivamente político poderá usar o tempo do exílio como\ntempo de serviço para efeito de aposentadoria,\nindependentemente do recolhimento da contribuição\nprevidenciária referente ao tempo do exílio.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q77",
+      "provaId": "inss-2022-tss",
+      "numero": 77,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n77 Situação hipotética: Francisco, que recebe pensão especial por ter participado de operações bélicas durante a Segunda Guerra Mundial, foi convidado para assumir a secretaria de segurança pública de determinado estado da Federação. Assertiva: Nessa situação, Francisco não poderá cumular a pensão especial de ex-combatente com os rendimentos decorrentes do cargo de secretário, mas poderá optar por um ou outro rendimento.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q78",
+      "provaId": "inss-2022-tss",
+      "numero": 78,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n78 As crianças vítimas de sequelas neurológicas decorrentes da síndrome congênita do zika vírus têm direito ao recebimento de uma pensão especial mensal e vitalícia que será devida pela secretaria de assistência social dos municípios em que elas residam, e que será paga com recursos orçamentários provenientes da União.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q79",
+      "provaId": "inss-2022-tss",
+      "numero": 79,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n79 Situação hipotética: Paulo, que era portador de deficiência física decorrente da síndrome da talidomida e que, por esse motivo, recebia pensão especial há mais de quinze anos,\nfaleceu recentemente em decorrência de complicações\ndecorrentes dessa enfermidade. Até então, Paulo convivia em companhia da sua mãe e a pensão por ele recebida era a única fonte de renda familiar. Assertiva: nessa situação, a mãe de Paulo tem direito de receber pensão previdenciária decorrente da morte de seu filho Paulo.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q80",
+      "provaId": "inss-2022-tss",
+      "numero": 80,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n80 O filho do seringueiro cujo pai tenha sido recrutado para trabalhar na produção de borracha nos seringais da região amazônica durante a Segunda Guerra Mundial e que comprovar o seu estado de carência econômica terá direito a receber o pagamento de pensão mensal vitalícia, cumulativo com o benefício concedido a seu pai. Julgue os próximos itens, relativos a reabilitação profissional.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q81",
+      "provaId": "inss-2022-tss",
+      "numero": 81,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n81 O segurado do RGPS vítima de acidente de trabalho poderá exigir do INSS, além dos benefícios decorrentes do acidente de trabalho, o transporte do acidentado para tratamento fora\ndo seu domicílio, quando necessário, assim como o\nfornecimento de instrumentos de auxílio para a sua\nlocomoção quando a perda ou redução da capacidade funcional do segurado puder ser atenuada pelo seu uso.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q82",
+      "provaId": "inss-2022-tss",
+      "numero": 82,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n82 Terá direito ao serviço de reabilitação profissional prestado pelo INSS, que tenha por objetivo proporcionar o reingresso ao mercado de trabalho, o segurado que ficar incapacitado parcial ou totalmente para o trabalho, independentemente do cumprimento do tempo de carência.\nAcerca da prescrição e dos recursos administrativos\nprevidenciários, julgue os itens subsequentes.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q83",
+      "provaId": "inss-2022-tss",
+      "numero": 83,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n83 Situação hipotética: Flávio formalizou pedido de pensão por morte em decorrência do óbito do seu companheiro Rodrigo. Após a análise da documentação apresentada, o INSS indeferiu o pedido sob o argumento de que Flávio não era dependente economicamente de Rodrigo. Assertiva: Nessa situação, contra a decisão de indeferimento caberá recurso ordinário na via administrativa, recurso este que deverá ser julgado pela Junta de Recursos do Conselho de Recursos da Previdência Social.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q84",
+      "provaId": "inss-2022-tss",
+      "numero": 84,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n84 Situação hipotética: Haroldo se aposentou por tempo de contribuição em abril de 2018 e somente em setembro de\n2022 constatou-se que o valor do seu benefício\nprevidenciário estava sendo pago a menor desde a data da\nsua implantação. Assertiva: Nessa situação, não está\nprescrito o direito de Haroldo requerer a revisão do valor do seu benefício nem tampouco o pagamento das diferenças devidas a partir da sua implantação. Julgue os itens seguintes, relativos aos crimes contra a seguridade social.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q85",
+      "provaId": "inss-2022-tss",
+      "numero": 85,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n85 Situação hipotética: Mário, contador da empresa Silva & Silva Ltda., deixou de lançar mensalmente nos títulos\npróprios da contabilidade da empresa as quantias\ndescontadas dos seus segurados, configurando com isso o crime de sonegação de contribuição previdenciária tipificado em artigo do Código Penal, razão por que contra ele foi movida ação judicial. Assertiva: Nessa situação, se Mário confessar espontaneamente o delito antes de proferida a\nsentença pertinente e recolher integralmente o valor\nsonegado, a sua pena será reduzida pela metade.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q86",
+      "provaId": "inss-2022-tss",
+      "numero": 86,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n86 O crime de apropriação indébita previdenciária é crime comissivo comum, tendo em vista que qualquer pessoa pode deixar de repassar à previdência social as contribuições recolhidas dos contribuintes, no prazo e na forma legal ou convencional. A respeito de Plano de Benefícios da Previdência Social, beneficiários, espécies de prestações, períodos de carência, salário de benefício e renda mensal do benefício, julgue os itens que se seguem.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Seguridade Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q87",
+      "provaId": "inss-2022-tss",
+      "numero": 87,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n87 O servidor público estadual efetivo vinculado a RPPS poderá se filiar ao RGPS na condição de segurado facultativo, ainda que não esteja afastado sem vencimentos.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Plano de Benefícios da Previdência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q88",
+      "provaId": "inss-2022-tss",
+      "numero": 88,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n88 O indivíduo segurado do RGPS que obtiver a guarda judicial de uma criança de cinco anos de idade para fins de adoção terá direito ao benefício do salário-maternidade, o qual será pago diretamente pelo INSS.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Plano de Benefícios da Previdência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q89",
+      "provaId": "inss-2022-tss",
+      "numero": 89,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n89 Situação hipotética: Maria, que contribui para o RGPS na\ncondição de empregada doméstica há dezessete anos\nininterruptos, recentemente completou sessenta e dois anos de idade. Assertiva: Nessa situação, Maria tem direito ao benefício da aposentadoria, cujo valor do benefício será equivalente a 100% da média aritmética simples das últimas trinta e seis contribuições mensais efetivamente recolhidas.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Plano de Benefícios da Previdência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q90",
+      "provaId": "inss-2022-tss",
+      "numero": 90,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n90 Situação hipotética: Cláudio contribuiu paro o RGPS pelo período de sete anos e seis meses, quando então ficou incapacitado para o trabalho e entrou em gozo do benefício de auxílio por incapacidade temporária, condição na qual ele permaneceu por dois anos e dez meses. Assertiva: Nessa situação, devido ao tempo que ficou sem contribuir para o INSS em decorrência do benefício, Cláudio perdeu a sua qualidade de segurado, mas poderá recuperá-la após doze contribuições mensais ininterruptas. Determinada região, sob a vigência de período de defeso de camarão e de lagosta fixado pelo IBAMA, conta, entre outros, com os seguintes segurados: I Manoel, pescador artesanal de camarão; II José, pescador artesanal de crustáceo e músico empregado; III Flávio, pescador profissional de tainha; IV Maria, pescadora artesanal e beneficiária de pensão por morte. Nessa situação hipotética, durante o período em apreço,",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Plano de Benefícios da Previdência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q91",
+      "provaId": "inss-2022-tss",
+      "numero": 91,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n91 Manoel está habilitado para usufruir o seguro-desemprego.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Plano de Benefícios da Previdência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q92",
+      "provaId": "inss-2022-tss",
+      "numero": 92,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n92 José, ainda que empregado, tem direito ao segurodesemprego.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Plano de Benefícios da Previdência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q93",
+      "provaId": "inss-2022-tss",
+      "numero": 93,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n93 Maria, ainda que beneficiária de pensão por morte, tem direito ao seguro-desemprego.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Plano de Benefícios da Previdência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q94",
+      "provaId": "inss-2022-tss",
+      "numero": 94,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n94 Manoel, José e Maria, ao pleitearem o seguro-desemprego, deverão solicitá-lo ao IBAMA, ao passo que Flávio deverá solicitá-lo ao INSS.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Plano de Benefícios da Previdência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q95",
+      "provaId": "inss-2022-tss",
+      "numero": 95,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n95 Flávio poderá usufruir o seguro-desemprego se o IBAMA declarar o defeso da tainha. A respeito do RPPS, em especial das regras sobre contagem\nrecíproca e compensação previdenciária, julgue os itens\nseguintes.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Plano de Benefícios da Previdência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q96",
+      "provaId": "inss-2022-tss",
+      "numero": 96,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n96 O tempo de atividade rural reconhecido pelo INSS por intermédio de certidão de tempo de serviço é reconhecido para fins de compensação financeira previdenciária entre o RGPS e o RPPS, independentemente de indenização a cargo do servidor.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Plano de Benefícios da Previdência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q97",
+      "provaId": "inss-2022-tss",
+      "numero": 97,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n97 O tempo de contribuição concomitante não gera direito\nadquirido à compensação financeira para efeito de\naposentadoria.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Plano de Benefícios da Previdência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q98",
+      "provaId": "inss-2022-tss",
+      "numero": 98,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n98 Situação hipotética: Carlos contribuiu durante quinze anos para o RGPS, mas se aposentou como servidor vinculado ao RPPS da União. Assertiva: Nessa situação, o RGPS e o RPPS são considerados, respectivamente, como regime de origem e regime instituidor.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Plano de Benefícios da Previdência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q99",
+      "provaId": "inss-2022-tss",
+      "numero": 99,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n99 Veda-se a contagem de tempo de contribuição fictício, mas se permite a acumulação de tempo de contribuição municipal ou distrital com tempo de contribuição estadual ou federal. Julgue os próximos itens, referentes à organização da assistência social.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Plano de Benefícios da Previdência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q100",
+      "provaId": "inss-2022-tss",
+      "numero": 100,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n100 A proteção social especial é um tipo de proteção que, entre outros objetivos, visa contribuir para a reconstrução de vínculos familiares e comunitários e a proteção de famílias e indivíduos para o enfrentamento de situações de violação de direitos.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Assistência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q101",
+      "provaId": "inss-2022-tss",
+      "numero": 101,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n101 Terá direito ao auxílio-inclusão a pessoa com deficiência\nfísica moderada ou grave, qualificada como segurado\nobrigatório do RGPS ou filiado a RPPS, que receba o BPC e passe a exercer atividade com remuneração limitada a dois salários mínimos.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Assistência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q102",
+      "provaId": "inss-2022-tss",
+      "numero": 102,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n102 No âmbito do Sistema Único de Assistência Social, compete à União efetuar o pagamento dos auxílios natalidade e funeral.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Assistência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q103",
+      "provaId": "inss-2022-tss",
+      "numero": 103,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n103 Situação hipotética: Carlos, estrangeiro, idoso maior de 65 anos, residente no país, é comprovadamente incapaz de prover a própria subsistência e não tem família no Brasil. Assertiva: Nessa situação, o fato de Carlos ser estrangeiro impede-lhe o direito ao BPC.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Assistência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q104",
+      "provaId": "inss-2022-tss",
+      "numero": 104,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n104 Situação hipotética: Jorge, com 65 anos de idade, e Márcia, também com 65 anos de idade, vivem em coabitação. Ela recebe benefício previdenciário cujo montante ultrapassa um quarto do salário mínimo. Assertiva: Nessa situação, o fato de Márcia receber benefício previdenciário no referido montante não retira de Jorge o direito ao BPC.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "x",
+      "disciplina": "Assistência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q105",
+      "provaId": "inss-2022-tss",
+      "numero": 105,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n105 O critério de aferição da percepção da renda familiar é considerado suficiente pela lei para a concessão do BPC. A respeito das inovações trazidas pela Emenda Constitucional (EC) n.º 103/2019, julgue os itens a seguir.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Assistência Social",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q106",
+      "provaId": "inss-2022-tss",
+      "numero": 106,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n106 Os proventos de aposentadoria e as pensões estão limitados à remuneração do respectivo servidor no cargo efetivo em que se deu a aposentadoria ou que serviu de referência para a concessão da pensão.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "x",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q107",
+      "provaId": "inss-2022-tss",
+      "numero": 107,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n107 Desde a promulgação da referida EC, passou a ser\nobrigatória a instituição de RPPS por todos os entes federativos. No tocante à aposentadoria da pessoa com deficiência segurada do RGPS julgue os seguintes itens.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q108",
+      "provaId": "inss-2022-tss",
+      "numero": 108,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n108 Considera-se pessoa com deficiência aquela que tem\nimpedimentos de longo prazo de diversas naturezas,\ninclusive sensorial, os quais, em interação com diversas barreiras, podem obstruir sua participação plena e efetiva na sociedade em igualdade de condições com as demais pessoas.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q109",
+      "provaId": "inss-2022-tss",
+      "numero": 109,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n109 É assegurada a concessão de aposentadoria pelo RGPS ao\nsegurado com deficiência aos 29 anos de tempo de\ncontribuição, se homem, e aos 24 anos de tempo de\ncontribuição, se mulher, no caso de segurado com\ndeficiência leve.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q110",
+      "provaId": "inss-2022-tss",
+      "numero": 110,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n110 É garantida a concessão de aposentadoria pelo RGPS à segurada com deficiência com 55 anos de idade, desde que cumprido tempo mínimo de contribuição de quinze anos e comprovada deficiência durante igual período.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q111",
+      "provaId": "inss-2022-tss",
+      "numero": 111,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n111 O grau de deficiência para fins de concessão de\naposentadoria poderá ser comprovado por diferentes meios, inclusive o testemunhal.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q112",
+      "provaId": "inss-2022-tss",
+      "numero": 112,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n112 A renda mensal da aposentadoria por idade devida ao segurado com deficiência é calculada, em qualquer situação, aplicando-se, sobre o salário de benefício, o percentual de 100%. Julgue os itens subsequentes, relativos a aspectos gerais da organização da seguridade social.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q113",
+      "provaId": "inss-2022-tss",
+      "numero": 113,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n113 As atividades de saúde são de relevância pública e sua organização obedecerá diversos princípios reitores, entre os quais o acesso universal; a descentralização, com direção única em cada esfera; e a participação da iniciativa privada na assistência à saúde, desde que obedecidos os princípios constitucionais.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q114",
+      "provaId": "inss-2022-tss",
+      "numero": 114,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n114 A assistência social é política que visa atender as\nnecessidades básicas, independentemente de contribuição, e deve ser organizada de forma centralizada.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q115",
+      "provaId": "inss-2022-tss",
+      "numero": 115,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n115 A finalidade da previdência social é assegurar aos seus beneficiários meios de manutenção em situações adversas, tais como desemprego involuntário e encargos de família,\ngarantida a preservação do valor dos benefícios e a\nuniversalidade de participação nos planos, mediante\ncontribuição.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q116",
+      "provaId": "inss-2022-tss",
+      "numero": 116,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n116 A seguridade social obedecerá a diversos princípios, tais como a vedação à seletividade na prestação dos serviços e à redutibilidade do valor nominal dos benefícios.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q117",
+      "provaId": "inss-2022-tss",
+      "numero": 117,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n117 As propostas orçamentárias anuais ou plurianuais da\nseguridade social são elaboradas por comissão formada necessariamente por representantes das áreas da saúde, da previdência social e da assistência social. Com relação ao Cadastro Nacional de Informações Sociais (CNIS), julgue os itens que se seguem.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q118",
+      "provaId": "inss-2022-tss",
+      "numero": 118,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n118 Informações inseridas extemporaneamente no CNIS,\nexcetuadas aquelas que forem retificadoras de dados\nanteriormente informados, somente serão aceitas se\ncorroboradas por documentos que comprovem a sua\nregularidade.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q119",
+      "provaId": "inss-2022-tss",
+      "numero": 119,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n119 Não é prescindível a expedição de ato administrativo fundamentado para que as informações constantes na carteira profissional ou carteira de trabalho e previdência social sejam desconsideradas.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "c",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    },
+    {
+      "id": "inss-2022-tss-q120",
+      "provaId": "inss-2022-tss",
+      "numero": 120,
+      "enunciado": "No que diz respeito aos princípios constitucionais da seguridade social, julgue os itens a seguir.\n\n120 O INSS deverá solicitar ao filiado a apresentação de\ndocumentos comprobatórios de informações que não\nconstarem no CNIS, inclusive aqueles expedidos por órgãos públicos ou certidões, vedada a sua obtenção diretamente do órgão ou da entidade responsável pela base de dados oficial.",
+      "alternativas": [
+        {
+          "id": "c",
+          "texto": "Certo"
+        },
+        {
+          "id": "e",
+          "texto": "Errado"
+        }
+      ],
+      "gabaritoId": "e",
+      "disciplina": "Saúde e Organização da Seguridade",
+      "tipo": "certo_errado"
+    }
+  ]
+}
