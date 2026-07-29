@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Treino Concursos
 
-## Getting Started
+Treine por prova, com foco. Escolha um caderno oficial, filtre por disciplina se quiser e resolva uma questão por vez, com feedback imediato e histórico local no navegador.
 
-First, run the development server:
+## O que faz
+
+- Catálogo de provas reais (múltipla escolha e Certo/Errado)
+- Resolução questão a questão, com atalhos de teclado
+- Mapa da prova com status (pendente, acerto, erro)
+- Modo foco para isolar a questão na tela
+- Filtro por disciplina
+- Histórico de tentativas no próprio navegador (sem conta)
+
+## Provas disponíveis
+
+| Prova | Banca | Ano | Questões | Formato |
+|-------|-------|-----|----------|---------|
+| BB Escriturário – Agente Comercial (A, B e C) | CESGRANRIO | 2023 | 70 cada | Múltipla |
+| Caixa – Técnico Bancário Novo | CESGRANRIO | 2024 | 60 | Múltipla |
+| CNU – Bloco 8 Nível Intermediário (manhã) | CESGRANRIO | 2024 | 15 | Múltipla |
+| INSS – Técnico do Seguro Social | CEBRASPE | 2022 | 120 | Certo/Errado |
+
+No INSS, itens anulados no gabarito oficial aparecem como “Item anulado” e não pontuam.
+
+## Como treinar
+
+1. Abra o catálogo em **Provas**
+2. Escolha uma prova
+3. (Opcional) filtre por disciplina
+4. Responda, confira e avance
+5. Veja o progresso no mapa ou no **Histórico**
+
+Atalhos úteis na sessão: letras das alternativas, Enter para conferir, setas para navegar.
+
+## Rodar localmente
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Comando | Uso |
+|---------|-----|
+| `npm run dev` | Servidor de desenvolvimento |
+| `npm run build` | Build de produção |
+| `npm run start` | Servir o build |
+| `npm run lint` | Biome (check) |
+| `npm run format` | Biome (formatar) |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Dados e novas provas
 
-## Learn More
+As provas da app vivem em `src/data/*.json`, geradas a partir dos PDFs em `src/data/raw/`.
 
-To learn more about Next.js, take a look at the following resources:
+Para o pipeline de extração/validação (extract, build, validate), veja [`src/data/lib/README.md`](src/data/lib/README.md).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js (App Router), React, TypeScript, Tailwind CSS, Biome.
