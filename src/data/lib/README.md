@@ -13,7 +13,6 @@
 |------|----------|
 | `bb-ac-a` | BB Agente Comercial (Prova A) |
 | `caixa-2024` | Caixa Técnico Bancário Novo |
-| `cnu-2024-b8` | CNU 2024 Bloco 8 intermediário |
 | `inss-2022` | INSS Técnico do Seguro Social |
 
 ## Comandos

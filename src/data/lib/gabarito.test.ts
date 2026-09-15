@@ -24,7 +24,7 @@ PROVA 1 - TÉCNICO BANCÁRIO NOVO - GABARITO 2
 		assert.equal(g[1] === "z", false);
 	});
 
-	it("isolates CNU bloco 8 gabarito 1", () => {
+	it("isolates a blockMarker between neighboring gabaritos", () => {
 		const text = `
 BLOCO 7 – X – GABARITO 1
 1- A

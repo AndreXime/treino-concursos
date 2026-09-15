@@ -21,9 +21,9 @@ const provas: Prova[] = [
 	stubProva({ id: "caixa", area: "Bancário", titulo: "Caixa" }),
 	stubProva({ id: "inss", area: "Previdência", titulo: "INSS" }),
 	stubProva({
-		id: "cnu",
+		id: "adm",
 		area: "Administração pública",
-		titulo: "CNU",
+		titulo: "ADM",
 	}),
 ];
 

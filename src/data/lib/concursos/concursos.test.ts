@@ -18,7 +18,7 @@ describe("concursos registry", () => {
 		assert.equal(c.provaPdfs.length, 2);
 	});
 
-	it("lists at least bb + 3 novos", () => {
-		assert.ok(listConcursos().length >= 4);
+	it("lists bb + caixa + inss", () => {
+		assert.equal(listConcursos().length, 3);
 	});
 });
