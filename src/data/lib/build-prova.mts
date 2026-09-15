@@ -100,6 +100,7 @@ const prova: Prova = {
 	titulo: config.prova.titulo,
 	orgao: config.prova.orgao,
 	cargo: config.prova.cargo,
+	area: config.prova.area,
 	banca: config.prova.banca,
 	ano: config.prova.ano,
 	edital: config.prova.edital,

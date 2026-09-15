@@ -10,6 +10,7 @@ export const caixa2024: ConcursoConfig = {
 		titulo: "Caixa – Técnico Bancário Novo (Gabarito 1)",
 		orgao: "Caixa Econômica Federal",
 		cargo: "Técnico Bancário Novo",
+		area: "Bancário",
 		banca: "CESGRANRIO",
 		ano: 2024,
 		edital: "Edital nº 01/2024/NM de 22 de fevereiro de 2024",

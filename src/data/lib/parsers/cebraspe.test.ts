@@ -13,6 +13,7 @@ const config = {
 		titulo: "T",
 		orgao: "O",
 		cargo: "C",
+		area: "A",
 		banca: "B",
 		ano: 2022,
 		edital: "E",

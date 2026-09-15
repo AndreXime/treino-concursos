@@ -21,6 +21,7 @@ export const bbAcA: ConcursoConfig = {
 		titulo: "BB Escriturário – Agente Comercial (Prova A · Gabarito 1)",
 		orgao: "Banco do Brasil",
 		cargo: "Escriturário – Agente Comercial",
+		area: "Bancário",
 		banca: "CESGRANRIO",
 		ano: 2023,
 		edital: "Seleção Externa 2022/001 · Edital nº 01 – 2022/001 BB",

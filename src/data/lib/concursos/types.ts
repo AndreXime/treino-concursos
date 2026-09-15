@@ -29,6 +29,7 @@ export interface ConcursoConfig {
 		titulo: string;
 		orgao: string;
 		cargo: string;
+		area: string;
 		banca: string;
 		ano: number;
 		edital: string;

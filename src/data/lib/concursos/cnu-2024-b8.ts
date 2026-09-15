@@ -10,6 +10,7 @@ export const cnu2024b8: ConcursoConfig = {
 		titulo: "CNU 2024 – Bloco 8 Nível Intermediário (Manhã · Gabarito 1)",
 		orgao: "Governo Federal",
 		cargo: "Nível Intermediário – Bloco 8",
+		area: "Administração pública",
 		banca: "CESGRANRIO",
 		ano: 2024,
 		edital: "Edital nº 08/2024 de 10 de janeiro de 2024",

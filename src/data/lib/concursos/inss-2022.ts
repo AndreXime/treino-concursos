@@ -10,6 +10,7 @@ export const inss2022: ConcursoConfig = {
 		titulo: "INSS – Técnico do Seguro Social (2022)",
 		orgao: "Instituto Nacional do Seguro Social",
 		cargo: "Técnico do Seguro Social",
+		area: "Previdência",
 		banca: "CEBRASPE",
 		ano: 2022,
 		edital: "Edital 2022",

@@ -25,6 +25,9 @@ const errors: string[] = [];
 if (prova.id !== config.prova.id) {
 	errors.push(`prova.id=${prova.id}`);
 }
+if (prova.area !== config.prova.area) {
+	errors.push(`prova.area=${prova.area}`);
+}
 if (prova.questoes.length !== config.expectedCount) {
 	errors.push(`count=${prova.questoes.length} want=${config.expectedCount}`);
 }
