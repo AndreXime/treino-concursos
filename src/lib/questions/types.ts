@@ -21,6 +21,7 @@ export interface Prova {
 	titulo: string;
 	orgao: string;
 	cargo: string;
+	area: string;
 	banca: string;
 	ano: number;
 	edital: string;
@@ -35,8 +36,13 @@ export interface QuestionFilterOptions {
 	disciplinas: string[];
 }
 
+export interface ProvaListFilters {
+	area?: string;
+}
+
 export interface ProvaRepository {
-	listProvas(): Promise<Prova[]>;
+	listProvas(filters?: ProvaListFilters): Promise<Prova[]>;
+	listAreas(): Promise<string[]>;
 	getProvaById(provaId: string): Promise<Prova | null>;
 	listQuestoes(provaId: string, filters?: QuestionFilters): Promise<Question[]>;
 	getQuestao(provaId: string, questionId: string): Promise<Question | null>;

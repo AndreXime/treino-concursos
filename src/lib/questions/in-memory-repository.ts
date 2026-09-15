@@ -1,6 +1,7 @@
 import { provas } from "@/data/provas";
 import type {
 	Prova,
+	ProvaListFilters,
 	ProvaRepository,
 	Question,
 	QuestionFilterOptions,
@@ -20,8 +21,17 @@ function matchesFilters(
 export class InMemoryProvaRepository implements ProvaRepository {
 	constructor(private readonly allProvas: Prova[]) {}
 
-	async listProvas(): Promise<Prova[]> {
-		return this.allProvas;
+	async listProvas(filters?: ProvaListFilters): Promise<Prova[]> {
+		if (!filters?.area) {
+			return this.allProvas;
+		}
+		return this.allProvas.filter((prova) => prova.area === filters.area);
+	}
+
+	async listAreas(): Promise<string[]> {
+		return [...new Set(this.allProvas.map((prova) => prova.area))].sort(
+			(a, b) => a.localeCompare(b, "pt-BR"),
+		);
 	}
 
 	async getProvaById(provaId: string): Promise<Prova | null> {
