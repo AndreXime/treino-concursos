@@ -7,9 +7,9 @@ export function buildProvasListHref(area?: string): string {
 	return `${basePath}?${params.toString()}`;
 }
 
-export function parseProvasListSearchParams(query: {
+export function parseProvasListSearchParams(query: { area?: string }): {
 	area?: string;
-}): { area?: string } {
+} {
 	const area =
 		query.area && query.area.trim() !== "" ? query.area.trim() : undefined;
 	return area ? { area } : {};
