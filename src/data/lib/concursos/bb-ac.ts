@@ -11,52 +11,34 @@ export const DISCIPLINAS_BB_AC: DisciplinaRange[] = [
 	{ nome: "Vendas e Negociação", de: 56, ate: 70 },
 ];
 
-const metaBase = {
-	orgao: "Banco do Brasil",
-	cargo: "Escriturário – Agente Comercial",
-	banca: "CESGRANRIO",
-	ano: 2023,
-	edital: "Seleção Externa 2022/001 · Edital nº 01 – 2022/001 BB",
-} as const;
-
-function bbConfig(letter: "A" | "B" | "C"): ConcursoConfig {
-	const lower = letter.toLowerCase();
-	return {
-		slug: `bb-ac-${lower}`,
-		parser: "cesgranrio",
-		tipo: "multipla",
-		expectedCount: 70,
-		prova: {
-			id: `bb-ac-2022-${lower}-g1`,
-			titulo: `BB Escriturário – Agente Comercial (Prova ${letter} · Gabarito 1)`,
-			...metaBase,
-			jsonFileName: `PROVA ${letter} - AGENTE COMERCIAL - GABARITO 1.json`,
+export const bbAcA: ConcursoConfig = {
+	slug: "bb-ac-a",
+	parser: "cesgranrio",
+	tipo: "multipla",
+	expectedCount: 70,
+	prova: {
+		id: "bb-ac-2022-a-g1",
+		titulo: "BB Escriturário – Agente Comercial (Prova A · Gabarito 1)",
+		orgao: "Banco do Brasil",
+		cargo: "Escriturário – Agente Comercial",
+		banca: "CESGRANRIO",
+		ano: 2023,
+		edital: "Seleção Externa 2022/001 · Edital nº 01 – 2022/001 BB",
+		jsonFileName: "PROVA A - AGENTE COMERCIAL - GABARITO 1.json",
+	},
+	provaPdfs: [{ fileName: "PROVA A - AGENTE COMERCIAL - GABARITO 1.pdf" }],
+	gabaritos: [
+		{
+			fileName:
+				"GABARITO - 23-04-2023 - PROVA A - ESCRITURÁRIO - AGENTE COMERCIAL.pdf",
+			gabaritoNumero: 1,
 		},
-		provaPdfs: [
-			{ fileName: `PROVA ${letter} - AGENTE COMERCIAL - GABARITO 1.pdf` },
-		],
-		gabaritos: [
-			{
-				fileName: `GABARITO - 23-04-2023 - PROVA ${letter} - ESCRITURÁRIO - AGENTE COMERCIAL.pdf`,
-				gabaritoNumero: 1,
-			},
-		],
-		disciplinas: DISCIPLINAS_BB_AC,
-		pageNoisePatterns: [
-			/^\s*BANCO DO BRASIL\s*$/gim,
-			/^\s*RASCUNHO\s*$/gim,
-			new RegExp(
-				`AGENTE COMERCIAL\\s*-\\s*PROVA ${letter}\\d*GABARITO\\s*\\d+`,
-				"gi",
-			),
-			new RegExp(
-				`AGENTE COMERCIAL\\s*-\\s*PROVA ${letter}\\s*GABARITO\\s*\\d+`,
-				"gi",
-			),
-		],
-	};
-}
-
-export const bbAcA = bbConfig("A");
-export const bbAcB = bbConfig("B");
-export const bbAcC = bbConfig("C");
+	],
+	disciplinas: DISCIPLINAS_BB_AC,
+	pageNoisePatterns: [
+		/^\s*BANCO DO BRASIL\s*$/gim,
+		/^\s*RASCUNHO\s*$/gim,
+		/AGENTE COMERCIAL\s*-\s*PROVA A\d*GABARITO\s*\d+/gi,
+		/AGENTE COMERCIAL\s*-\s*PROVA A\s*GABARITO\s*\d+/gi,
+	],
+};

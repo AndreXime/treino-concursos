@@ -19,6 +19,6 @@ describe("concursos registry", () => {
 	});
 
 	it("lists at least bb + 3 novos", () => {
-		assert.ok(listConcursos().length >= 6);
+		assert.ok(listConcursos().length >= 4);
 	});
 });
