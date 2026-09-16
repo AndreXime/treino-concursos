@@ -17,6 +17,7 @@ Treine por prova, com foco. Escolha um caderno oficial, filtre por disciplina se
 |-------|-------|-----|----------|---------|
 | BB Escriturário – Agente Comercial (Prova A) | CESGRANRIO | 2023 | 70 | Múltipla |
 | Caixa – Técnico Bancário Novo | CESGRANRIO | 2024 | 60 | Múltipla |
+| CNU 2024 – Bloco 2 Tecnologia, Dados e Informação | CESGRANRIO | 2024 | 50 | Múltipla |
 | INSS – Técnico do Seguro Social | CEBRASPE | 2022 | 120 | Certo/Errado |
 
 No INSS, itens anulados no gabarito oficial aparecem como “Item anulado” e não pontuam.

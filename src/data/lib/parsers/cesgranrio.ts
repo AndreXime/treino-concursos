@@ -1,12 +1,14 @@
 import type { ConcursoConfig } from "../concursos";
 import {
 	formatEnunciado,
-	parseAlternativas,
 	type ParsedQuestion,
+	parseAlternativas,
 } from "../shared";
 
 function applyNoise(text: string, config: ConcursoConfig): string {
-	let out = text.replace(/\r\n/g, "\n").replace(/--\s*\d+\s*of\s*\d+\s*--/g, "\n");
+	let out = text
+		.replace(/\r\n/g, "\n")
+		.replace(/--\s*\d+\s*of\s*\d+\s*--/g, "\n");
 	for (const pattern of config.pageNoisePatterns ?? []) {
 		out = out.replace(pattern, "\n");
 	}
@@ -23,7 +25,10 @@ function isSectionHeader(line: string): boolean {
 
 function refineSupport(between: string): string {
 	let t = between.replace(/\r\n/g, "\n").trim();
-	t = t.replace(/^[\s\S]*?\bLEIA ATENTAMENTE[\s\S]*?(?=\n[A-Za-zÀ-ú"“]|\n\d)/i, "");
+	t = t.replace(
+		/^[\s\S]*?\bLEIA ATENTAMENTE[\s\S]*?(?=\n[A-Za-zÀ-ú"“]|\n\d)/i,
+		"",
+	);
 	const lines = t.split("\n");
 	let start = 0;
 	for (let i = 0; i < lines.length; i++) {
@@ -46,6 +51,7 @@ function looksLikeSupportBlock(text: string): boolean {
 	const t = text.trim();
 	if (t.length < 80 || t.length > 25000) return false;
 	if (/LEIA ATENTAMENTE/i.test(t)) return false;
+	if (/Cart[aã]o-Resposta|Caderno de Quest[oõ]es/i.test(t)) return false;
 	if (/^\d{1,3}\n/.test(t)) return false;
 	if (/^\(A\)/.test(t)) return false;
 	return /[a-zà-ú]{4,}/i.test(t);
@@ -84,8 +90,7 @@ export function parseCesgranrioRaw(
 	config: ConcursoConfig,
 ): Map<number, ParsedQuestion> {
 	const clean = applyNoise(raw, config);
-	const questionRegex =
-		/(?:^|\n)(\d{1,3})\n(?=\([A-E]\)|[A-ZÀ-Úa-zà-ú"“*])/g;
+	const questionRegex = /(?:^|\n)(\d{1,3})\n(?=\([A-E]\)|[A-ZÀ-Úa-zà-ú"“*])/g;
 	const matches = Array.from(clean.matchAll(questionRegex));
 	const byNumero = new Map<number, ParsedQuestion>();
 
@@ -121,7 +126,7 @@ export function parseCesgranrioRaw(
 		if (nextStart === undefined) continue;
 
 		const window = clean.slice(start, nextStart);
-		const semNumero = window.replace(/^\d{1,3}\n/, "");
+		const semNumero = window.replace(/^\n?\d{1,3}\n/, "");
 		const inicioAlt = semNumero.search(/\(A\)/);
 		if (inicioAlt < 0) {
 			cursor = start + match[0].length;
@@ -139,7 +144,9 @@ export function parseCesgranrioRaw(
 
 		if (
 			lastSupport &&
-			!enunciado.startsWith(lastSupport.slice(0, Math.min(80, lastSupport.length)))
+			!enunciado.startsWith(
+				lastSupport.slice(0, Math.min(80, lastSupport.length)),
+			)
 		) {
 			enunciado = `${lastSupport}\n\n${enunciado}`;
 		}

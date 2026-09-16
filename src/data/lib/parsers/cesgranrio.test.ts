@@ -45,4 +45,41 @@ Pergunta sobre o texto?
 		assert.equal(q.alternativas.length, 5);
 		assert.equal(q.alternativas[0].id, "a");
 	});
+
+	it("does not treat capa/instruções as support text", () => {
+		const raw = `
+LEIA ATENTAMENTE AS INSTRUÇÕES ABAIXO.
+01 - ATENÇÃO: o candidato deve escrever seu nome no Cartão-Resposta e conferir o Caderno de Questões com material suficiente para parecer um bloco de apoio longo nas provas.
+02 - O tempo disponível para esta Prova objetiva é de três horas e meia.
+
+1
+Pergunta limpa?
+(A) um
+(B) dois
+(C) tres
+(D) quatro
+(E) cinco
+`;
+		const parsed = parseCesgranrioRaw(raw, config);
+		const q = parsed.get(1);
+		assert.ok(q);
+		assert.equal(q.enunciado, "Pergunta limpa?");
+		assert.doesNotMatch(q.enunciado, /LEIA ATENTAMENTE|Cartão-Resposta/);
+	});
+
+	it("strips leading question number even when match includes newline", () => {
+		const raw = `
+1
+Enunciado sem prefixo numérico?
+(A) um
+(B) dois
+(C) tres
+(D) quatro
+(E) cinco
+`;
+		const parsed = parseCesgranrioRaw(raw, config);
+		const q = parsed.get(1);
+		assert.ok(q);
+		assert.equal(q.enunciado, "Enunciado sem prefixo numérico?");
+	});
 });

@@ -18,7 +18,14 @@ describe("concursos registry", () => {
 		assert.equal(c.provaPdfs.length, 2);
 	});
 
-	it("lists bb + caixa + inss", () => {
-		assert.equal(listConcursos().length, 3);
+	it("resolves cnu-2024-b2 slug", () => {
+		const c = getConcurso("cnu-2024-b2");
+		assert.equal(c.parser, "cesgranrio");
+		assert.equal(c.expectedCount, 50);
+		assert.equal(c.tipo, "multipla");
+	});
+
+	it("lists bb + caixa + cnu-b2 + inss", () => {
+		assert.equal(listConcursos().length, 4);
 	});
 });
