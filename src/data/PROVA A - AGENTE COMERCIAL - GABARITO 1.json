@@ -570,7 +570,7 @@
       "id": "bb-ac-2022-a-g1-q19",
       "provaId": "bb-ac-2022-a-g1",
       "numero": 19,
-      "enunciado": "Três novas agências de um banco estão sendo criadas, e alguns poucos materiais ainda precisam ser comprados. A Tabela a seguir mostra esses materiais e suas respectivas quantidades, pedidas por cada uma dessas agências. Sabe-se que todos os armários são idênticos e têm o mesmo preço, o mesmo ocorrendo com as mesas e com as cadeiras.\n\nArmário | Mesa | Cadeira | Custo total (R$)\nAgência X: 4 | 7 | 10 | 7500\nAgência Y: 1 | 2 | 3 | 2080\nAgência Z: 2 | 2 | 2 | ?\n\nO custo total da compra do material para a Agência Z, em R$, é de",
+      "enunciado": "Três novas agências de um banco estão sendo criadas, e alguns poucos materiais ainda precisam ser comprados. A Tabela a seguir mostra esses materiais e suas respectivas quantidades, pedidas por cada uma dessas agências. Sabe-se que todos os armários são idênticos e têm o mesmo preço, o mesmo ocorrendo com as mesas e com as cadeiras.\n\n|  | Armário | Mesa | Cadeira | Custo total (R$) |\n|---|---|---|---|---|\n| Agência X | 4 | 7 | 10 | 7500 |\n| Agência Y | 1 | 2 | 3 | 2080 |\n| Agência Z | 2 | 2 | 2 | ? |\n\nO custo total da compra do material para a Agência Z, em R$, é de",
       "alternativas": [
         {
           "id": "a",
@@ -1841,7 +1841,7 @@
       "id": "bb-ac-2022-a-g1-q60",
       "provaId": "bb-ac-2022-a-g1",
       "numero": 60,
-      "enunciado": "Um consultor levantou o desempenho dos canais de vendas remotos de cinco empresas ao longo de uma semana e montou a Tabela apresentada a seguir.\n\nEmpresa | Compras iniciadas na semana | Compras finalizadas na semana\nV | 480 | 400\nW | 600 | 380\nX | 800 | 450\nY | 450 | 330\nZ | 580 | 430\n\nCom base nessa Tabela, a menor taxa de abandono foi registrada pela empresa",
+      "enunciado": "Um consultor levantou o desempenho dos canais de vendas remotos de cinco empresas ao longo de uma semana e montou a Tabela apresentada a seguir.\n\n| Empresa | Compras iniciadas na semana | Compras finalizadas na semana |\n|---|---|---|\n| V | 480 | 400 |\n| W | 600 | 380 |\n| X | 800 | 450 |\n| Y | 450 | 330 |\n| Z | 580 | 430 |\n\nCom base nessa Tabela, a menor taxa de abandono foi registrada pela empresa",
       "alternativas": [
         {
           "id": "a",

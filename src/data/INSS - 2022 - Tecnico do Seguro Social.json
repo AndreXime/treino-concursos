@@ -772,7 +772,7 @@
       "id": "inss-2022-tss-q41",
       "provaId": "inss-2022-tss",
       "numero": 41,
-      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n41 Os cookies, mencionados no texto da figura apresentada, podem salvar configurações dos usuários em um arquivo armazenado nos computadores desses usuários.",
+      "enunciado": "$$ IMAGE 1 $$\n\n$$ IMAGE 2 $$\n\nPara melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Ao aceitar, você terá acesso a todas as funcionalidades do site. Se clicar em “Rejeitar Cookies”, os cookies que não forem estritamente necessários serão desativados. Para escolher quais quer autorizar, clique em “Gerenciar cookies”. Saiba mais em nossa Declaração de Cookies.\nTendo como base a figura anterior, julgue os seguintes itens.\n\n41 Os cookies, mencionados no texto da figura apresentada, podem salvar configurações dos usuários em um arquivo armazenado nos computadores desses usuários.",
       "alternativas": [
         {
           "id": "c",
@@ -791,7 +791,7 @@
       "id": "inss-2022-tss-q42",
       "provaId": "inss-2022-tss",
       "numero": 42,
-      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n42 De acordo com o trecho destacado na barra de endereço mostrada na figura em apreço (cadeado seguido do trecho https://), é correto afirmar que a página em questão é parte da intranet do INSS, acessível somente por meio de senha, conforme indica o símbolo do cadeado à esquerda do endereço. Na planilha mostrada na figura ao lado, que representa um conjunto de células no MS Excel\n365, foi realizada a seguinte\nsequência de ações: • todas as células mostradas foram selecionadas; • foi selecionada a opção Remover Duplicadas; • foram selecionadas todas as colunas na caixa de diálogo Remover Duplicadas e, em seguida, clicou-se no botão OK. Nessa situação hipotética,",
+      "enunciado": "$$ IMAGE 1 $$\n\n$$ IMAGE 2 $$\n\nPara melhorar a sua experiência na plataforma e prover serviços personalizados, utilizamos cookies. Ao aceitar, você terá acesso a todas as funcionalidades do site. Se clicar em “Rejeitar Cookies”, os cookies que não forem estritamente necessários serão desativados. Para escolher quais quer autorizar, clique em “Gerenciar cookies”. Saiba mais em nossa Declaração de Cookies.\nTendo como base a figura anterior, julgue os seguintes itens.\n\n42 De acordo com o trecho destacado na barra de endereço mostrada na figura em apreço (cadeado seguido do trecho https://), é correto afirmar que a página em questão é parte da intranet do INSS, acessível somente por meio de senha, conforme indica o símbolo do cadeado à esquerda do endereço.",
       "alternativas": [
         {
           "id": "c",
@@ -810,7 +810,7 @@
       "id": "inss-2022-tss-q43",
       "provaId": "inss-2022-tss",
       "numero": 43,
-      "enunciado": "Em relação a aspectos estruturais do texto CB1A1 e às informações por ele veiculadas, julgue os itens subsequentes.\n\n43 nenhuma linha da planilha foi apagada. Julgue os próximos itens, acerca de Windows 10 e segurança da informação.",
+      "enunciado": "Na planilha mostrada na figura ao lado, que representa um conjunto de células no MS Excel 365, foi realizada a seguinte sequência de ações:\n\n$$ IMAGE 3 $$\n\n• todas as células mostradas foram selecionadas;\n• foi selecionada a opção Remover Duplicadas;\n• foram selecionadas todas as colunas na caixa de diálogo Remover Duplicadas e, em seguida, clicou-se no botão OK.\nNessa situação hipotética,\n\n43 nenhuma linha da planilha foi apagada.",
       "alternativas": [
         {
           "id": "c",
@@ -2288,5 +2288,10 @@
       "disciplina": "Saúde e Organização da Seguridade",
       "tipo": "certo_errado"
     }
-  ]
+  ],
+  "imagens": {
+    "1": "/provas/inss-2022-tss/images/image-1.png",
+    "2": "/provas/inss-2022-tss/images/image-2.png",
+    "3": "/provas/inss-2022-tss/images/image-3.png"
+  }
 }
