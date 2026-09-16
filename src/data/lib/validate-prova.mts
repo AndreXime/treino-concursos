@@ -4,10 +4,13 @@
  */
 import fs from "node:fs";
 import { join } from "node:path";
+import { collectImageNumbers } from "@/lib/questions/images";
 import type { Prova } from "@/lib/questions/types";
-import { getConcurso, disciplinaDoNumero } from "./concursos";
+import { disciplinaDoNumero, getConcurso } from "./concursos";
 import { loadConcursoGabarito } from "./gabarito";
 import { DATA_ROOT } from "./shared";
+
+const PROJECT_ROOT = join(DATA_ROOT, "..", "..");
 
 const [slug] = process.argv.slice(2);
 if (!slug) {
@@ -33,6 +36,8 @@ if (prova.questoes.length !== config.expectedCount) {
 }
 
 const nums = new Set<number>();
+const referencedImages = new Set<number>();
+
 for (const q of prova.questoes) {
 	if (nums.has(q.numero)) errors.push(`dup ${q.numero}`);
 	nums.add(q.numero);
@@ -64,8 +69,11 @@ for (const q of prova.questoes) {
 		}
 	}
 
-	if (/\$\$\s*IMAGE/i.test(q.enunciado)) {
-		errors.push(`Q${q.numero} IMAGE leftover`);
+	for (const n of collectImageNumbers(
+		q.enunciado,
+		...q.alternativas.map((a) => a.texto),
+	)) {
+		referencedImages.add(n);
 	}
 
 	const disc = disciplinaDoNumero(config.disciplinas, q.numero);
@@ -85,6 +93,18 @@ for (const q of prova.questoes) {
 
 for (let n = 1; n <= config.expectedCount; n++) {
 	if (!nums.has(n)) errors.push(`missing ${n}`);
+}
+
+for (const n of referencedImages) {
+	const url = prova.imagens?.[String(n)];
+	if (!url) {
+		errors.push(`IMAGE ${n} sem entrada em prova.imagens`);
+		continue;
+	}
+	const filePath = join(PROJECT_ROOT, "public", url.replace(/^\//, ""));
+	if (!fs.existsSync(filePath)) {
+		errors.push(`IMAGE ${n} arquivo ausente: ${filePath}`);
+	}
 }
 
 if (errors.length) {

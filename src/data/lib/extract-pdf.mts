@@ -4,7 +4,7 @@ import { PDFParse } from "pdf-parse";
 import { getConcurso } from "./concursos";
 import { ARTEFACTS_DIR, RAW_DIR } from "./shared";
 
-const MIN_IMAGE_SIDE = 100;
+const MIN_IMAGE_SIDE = 60;
 
 interface ExportedImage {
 	number: number;

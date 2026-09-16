@@ -1,15 +1,15 @@
 import fs from "node:fs";
 import { join } from "node:path";
 import type { Prova, Question } from "@/lib/questions/types";
-import { getConcurso, disciplinaDoNumero } from "./concursos";
+import { disciplinaDoNumero, getConcurso } from "./concursos";
 import { loadConcursoGabarito } from "./gabarito";
 import { parseCebraspeRaw } from "./parsers/cebraspe";
 import { parseCesgranrioRaw } from "./parsers/cesgranrio";
+import { publishProvaImages } from "./publish-images";
 import { ARTEFACTS_DIR, DATA_ROOT, type ParsedQuestion } from "./shared";
 
-function stripImages(text: string): string {
+function normalizeQuestionText(text: string): string {
 	return text
-		.replace(/\$\$\s*IMAGE\s+\d+\s*\$\$/g, "")
 		.replace(/[ \t]{2,}/g, " ")
 		.replace(/\n{3,}/g, "\n\n")
 		.trim();
@@ -84,16 +84,22 @@ for (let n = 1; n <= config.expectedCount; n++) {
 		id: `${config.prova.id}-q${pad}`,
 		provaId: config.prova.id,
 		numero: n,
-		enunciado: stripImages(q.enunciado),
+		enunciado: normalizeQuestionText(q.enunciado),
 		alternativas: q.alternativas.map((a) => ({
 			id: a.id,
-			texto: a.texto,
+			texto: normalizeQuestionText(a.texto),
 		})),
 		gabaritoId: gabarito[n],
 		disciplina: disciplinaDoNumero(config.disciplinas, n),
 		tipo: config.tipo,
 	});
 }
+
+const imageTexts = questoes.flatMap((q) => [
+	q.enunciado,
+	...q.alternativas.map((a) => a.texto),
+]);
+const imagens = publishProvaImages(config, imageTexts);
 
 const prova: Prova = {
 	id: config.prova.id,
@@ -105,8 +111,12 @@ const prova: Prova = {
 	ano: config.prova.ano,
 	edital: config.prova.edital,
 	questoes,
+	...(Object.keys(imagens).length > 0 ? { imagens } : {}),
 };
 
 const outPath = join(DATA_ROOT, config.prova.jsonFileName);
 fs.writeFileSync(outPath, `${JSON.stringify(prova, null, 2)}\n`);
-console.log(`OK ${outPath} (${questoes.length} questões)`);
+const imageCount = Object.keys(imagens).length;
+console.log(
+	`OK ${outPath} (${questoes.length} questões${imageCount > 0 ? `, ${imageCount} figura(s)` : ""})`,
+);

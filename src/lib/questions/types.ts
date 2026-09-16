@@ -26,6 +26,8 @@ export interface Prova {
 	ano: number;
 	edital: string;
 	questoes: Question[];
+	/** Mapa `N` → URL pública de `$$ IMAGE N $$` (ex.: `/provas/.../images/image-7.png`). */
+	imagens?: Record<string, string>;
 }
 
 export interface QuestionFilters {

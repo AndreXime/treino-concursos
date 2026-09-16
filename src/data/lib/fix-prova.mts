@@ -38,10 +38,7 @@ for (const q of prova.questoes) {
 			}
 		}
 	}
-	q.enunciado = q.enunciado
-		.replace(/\$\$\s*IMAGE\s+\d+\s*\$\$/g, "")
-		.replace(/[ \t]{2,}/g, " ")
-		.trim();
+	q.enunciado = q.enunciado.replace(/[ \t]{2,}/g, " ").trim();
 	q.tipo = config.tipo;
 }
 
