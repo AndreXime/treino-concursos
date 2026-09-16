@@ -7,7 +7,7 @@ import {
 	alternativeOptionClass,
 	feedbackPanelClass,
 } from "@/lib/ui/question-styles";
-import { renderEmphasis } from "@/lib/ui/render-emphasis";
+import { renderQuestionContent } from "@/lib/ui/render-emphasis";
 import { resolveSessionHotkey } from "@/lib/ui/session-hotkeys";
 
 interface QuestionResolverProps {
@@ -103,9 +103,11 @@ export function QuestionResolver({
 				</span>
 			</div>
 
-			<h2 className="whitespace-pre-wrap font-sans text-lg leading-relaxed text-foreground sm:text-xl">
-				{renderEmphasis(question.enunciado)}
-			</h2>
+			<div className="whitespace-pre-wrap font-sans text-lg leading-relaxed text-foreground sm:text-xl">
+				{renderQuestionContent(question.enunciado, {
+					imagens: prova.imagens,
+				})}
+			</div>
 
 			<fieldset className="mt-8 space-y-3" disabled={revealed}>
 				<legend className="sr-only">Alternativas</legend>
@@ -116,8 +118,7 @@ export function QuestionResolver({
 							{
 								selected: selectedId === option.id,
 								revealed,
-								isGabarito:
-									!isAnulada && option.id === question.gabaritoId,
+								isGabarito: !isAnulada && option.id === question.gabaritoId,
 							},
 						)} ${revealed ? "cursor-default" : ""}`}
 					>
@@ -133,7 +134,9 @@ export function QuestionResolver({
 							<span className="mr-2 font-semibold uppercase text-muted">
 								{option.id})
 							</span>
-							{renderEmphasis(option.texto)}
+							{renderQuestionContent(option.texto, {
+								imagens: prova.imagens,
+							})}
 						</span>
 					</label>
 				))}
